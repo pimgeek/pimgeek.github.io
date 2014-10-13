@@ -7,6 +7,7 @@
     <title>pimgeek 的个人站点</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pimgeek-custom.css">
     <script src="javascripts/frontends.js"></script>
     
     <!--[if lt IE 9]>
@@ -16,8 +17,8 @@
   <body>
     <div class="wrapper">
       <header>
-	<div style="float:left;margin-right:15px;"><img id="profile-pic" style="width:80px;height:80px;border-radius:20%;" alt="个人形象" src="http://img.teamkn.com/i/rVTBNCMK.png" /></div>
-	<div style="display:table-cell; vertical-align:middle;height:80px;">
+	<div id="profile-img-frame"><img id="profile-img" alt="个人头像" src="http://img.teamkn.com/i/rVTBNCMK.png" /></div>
+	<div id="site-banner">
         <h1>思圆录</h1>
 	<p>让思考的流转更圆融</p>
         <p class="view"><a href="https://github.com/pimgeek">本站源码 <strong>GitHub</strong></a></p>
@@ -26,7 +27,7 @@
         </ul>
 	</div>
       </header>
-      <div style="clear:both;height:0px;"></div>
+      <div class="float-stopper"></div>
       <section>
 	<h3>
 	  <a name="welcome-to-pimgeek-site" class="anchor" href="#welcome-to-pimgeek-site">欢迎访问 pimgeek 的个人站点！</a>
