@@ -40,7 +40,7 @@ REM **
 echo 新的静态 HTML 站点发布操作执行完毕。
 pause
 
-%GIT_CMD% add -A
+%GIT_CMD% add .
 %GIT_CMD% commit
 %GIT_CMD% push
 
