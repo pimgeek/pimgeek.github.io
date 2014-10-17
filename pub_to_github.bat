@@ -1,6 +1,12 @@
 @ECHO OFF
 
 REM **
+REM ** switch to utf-8 codepage
+REM **
+
+chcp.com 65001
+
+REM **
 REM ** define ZIM_DIR and GH_PAGES_BASE_DIR
 REM **
 
@@ -37,7 +43,7 @@ REM ** do publish to github operations
 REM ** 
 %ZIM_CMD% --export -r -O --template ZeroFiveEight --index-page index -o %GH_PAGES_BASE_DIR%\zim %ZIM_FILE%
 
-echo 新的静态 HTML 站点发布操作执行完毕。
+echo 新的静态 HTML 站点发布前预处理操作执行完毕。
 pause
 
 %GIT_CMD% add .
