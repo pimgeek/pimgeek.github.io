@@ -8,18 +8,29 @@ body, html {
   margin:0;
   padding:0;
 }
+h1,h2,h3,h4,h5,h6 {
+  color:#4E9A06;
+  font-weight:300;
+  margin:4% 0px 2% 0px;
+}
+h1 {
+  line-height:150%;
+}
+h2 {
+  line-height:140%;
+}
 .wrapper {
   height:100%;
   position:relative;
 }
 #navigation {
-  background-color:#F3F3F3;
+  background-color:#E4F4E0;
   display:inline-block;
   border-right:1px solid #EAEAEA;
   padding:5%;
   position:relative;
   float:right;
-  min-height:100%;
+  min-height:120%;
   width:20%;
 }
 #content {
@@ -30,10 +41,8 @@ body, html {
   padding:5%;
 }
 #navigation ul {
-  margin-top:0;
-  margin-bottom:0;
-  padding-left:5%;
-  padding-right:5%;
+  padding:0px 5% 0px 5%;
+  margin:4% 0px 2% 0px;
 }
 #navigation li {
   list-style-type:square;
@@ -52,20 +61,9 @@ body, html {
 #content h1:nth-child(1) {
   margin-top:0;
 }
-h1,h2,h3,h4,h5,h6 {
-  color:#4E9A06;
-  font-weight:300;
-}
-h1 {
-  line-height:150%;
-  margin-bottom:0px;
-}
-h2 {
-  line-height:140%;
-}
 #content p {
   line-height:180%;
-  padding-bottom:1%;
+  padding:2% 0px 1% 0px;
   margin:0px 0px 0px 0px;
 }
 #content a {
@@ -79,7 +77,8 @@ h2 {
   text-decoration: underline;
 }
 #content ul {
-  padding-left:5%;
+  padding:0px 5% 0px 5%;
+  margin:0px 0px 0px 0px;
 }
 #content strike {
   color: grey;
