@@ -35,19 +35,24 @@ REM **
 del /q /s %GH_PAGES_BASE_DIR%\zim\*.*
 for /d %%i in (%GH_PAGES_BASE_DIR%\zim\*.*) do rmdir /q /s %%i
 
-echo 前一次的静态 HTML 站点已经被清空。
+echo 前一次的静态 HTML 站点内容已经被清空。
 pause
 
 REM ** 
 REM ** do publish to github operations
 REM ** 
-%ZIM_CMD% --export -r -O --template ZeroFiveEight --index-page index -o %GH_PAGES_BASE_DIR%\zim %ZIM_FILE%
+%ZIM_CMD% --export -r -O --template %GH_PAGES_BASE_DIR%\templates\ZeroFiveEight.html --index-page index -o %GH_PAGES_BASE_DIR%\zim %ZIM_FILE%
 
-echo 新的静态 HTML 站点发布前预处理操作执行完毕。
+echo 新的静态 HTML 站点内容已经生成完毕。
 pause
 
 %GIT_CMD% add .
+%GIT_CMD% add ../templates/*.html
+%GIT_CMD% add ../stylesheets/*.css
 %GIT_CMD% commit
+
+echo.
+echo 请输入 github push 的用户密码：
 %GIT_CMD% push
 
 REM ** 
