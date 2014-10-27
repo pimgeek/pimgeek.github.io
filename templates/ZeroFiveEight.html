@@ -21,7 +21,7 @@
   <div class="wrapper">
     <div id="navigation"> [% index() %] </div>
     <div id="content">
-      [% SET site_domain = "http://pimgeek.github.io/zim" %]
+      <!--[% SET site_domain = "http://pimgeek.github.io" %]-->
       <!--[% FOR page IN pages %]-->
       <h1>[% page.heading %] <a name='[% anchor(page) %]'></a></h1>
 
@@ -44,7 +44,7 @@
       <!--[% END %]-->
 
       <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key='zim/[% page.heading %]' data-title='[% page.heading %]' data-url='[% site_domain %]/[% page.heading %].html'></div>
+      <div class="ds-thread" data-thread-key='[% page.name.replace(":","/") %]' data-title='[% page.name.replace(":","/") %]' data-url='[% site_domain %]/zim/[% page.name.replace(":","/") %].html'></div>
       <!-- 多说评论框 end -->
 
       <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
