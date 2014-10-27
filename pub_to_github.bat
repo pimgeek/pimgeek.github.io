@@ -46,15 +46,6 @@ REM **
 echo 新的静态 HTML 站点内容已经生成完毕。
 pause
 
-%GIT_CMD% add .
-%GIT_CMD% add ../templates/*.html
-%GIT_CMD% add ../stylesheets/*.css
-%GIT_CMD% commit
-
-echo.
-echo 请输入 github push 的用户密码：
-%GIT_CMD% push
-
 REM ** 
 REM ** return to start drive and path
 REM ** 
