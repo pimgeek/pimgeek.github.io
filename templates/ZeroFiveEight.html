@@ -33,9 +33,9 @@
         <!--[% FOR link IN page.backlinks %]-->
         [% IF loop.first %]
         <hr class='footnotes'>
-        <b>Backlinks:</b>
+        <b>相关条目：<br /></b>
         [% END %]
-        <a href='[% uri(link) %]'>[% link.name %]</a>
+        # <a href='[% uri(link) %]'>[% link.name %]</a><br />
         [% IF loop.last %]<br /><br />[% END %]
         <!--[% END %]-->
       </span>
