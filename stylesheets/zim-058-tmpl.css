@@ -20,7 +20,10 @@ h2 {
   line-height:140%;
 }
 img {
+  display:block;
   max-width:100%;
+  margin-left:auto;
+  margin-right:auto;
 }
 .wrapper {
   height:100%;
@@ -49,6 +52,7 @@ img {
 }
 #navigation li {
   list-style-type:square;
+  margin-bottom:5%;
 }
 #navigation a {
   text-decoration:none;
