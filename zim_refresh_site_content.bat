@@ -12,7 +12,7 @@ REM **
 
 set START_PATH=%CD%
 set START_DRV=%CD:~0,2%
-set ZIM_CMD=d:\pim-wudi\_tool\zim61\App\ZimDesktopWiki\zim.exe
+set ZIM_CMD=r:\_tool\zim\App\ZimDesktopWiki\zim.exe
 set GIT_CMD=d:\pim-wudi\_tool\dev-lang\cygwin\bin\git.exe
 set GH_PAGES_BASE_DIR=r:\_dev\github\pimgeek.github.io
 set GH_PAGES_BASE_DIR_DRV=%GH_PAGES_BASE_DIR:~0,2%
@@ -42,9 +42,9 @@ pause
 REM ** 
 REM ** do publish to github operations
 REM ** 
+%ZIM_CMD% --index %ZIM_FILE%
 %ZIM_CMD% --export -r -O --template %GH_PAGES_BASE_DIR%\templates\ZeroFiveEight.html --index-page index -o %GH_PAGES_BASE_DIR%\zim %ZIM_FILE%
 
-echo.
 echo 新的静态 HTML 站点内容已经生成完毕。
 pause
 
