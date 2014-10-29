@@ -4,7 +4,6 @@
 
 find ./zim -name "*.html" -exec sed -i -r 's/src=".*\/http:\/([^"]*)"/src="http:\/\/\1"/ig' '{}' \; 
 
-echo
 echo 图片地址已经修复完毕。
 sleep 2
 
