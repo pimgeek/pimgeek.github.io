@@ -2,12 +2,13 @@
 
 ./zim_refresh_site_content.bat
 
-echo
 find ./zim -name "*.html" -exec sed -i -r 's/src=".*\/http:\/([^"]*)"/src="http:\/\/\1"/ig' '{}' \; 
 
+echo
 echo 图片地址已经修复完毕。
 sleep 2
 
+echo
 echo 下面开始提交网站内容的新版本。
 sleep 2
 git add ./zim/.

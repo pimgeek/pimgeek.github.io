@@ -35,6 +35,7 @@ REM **
 del /q /s %GH_PAGES_BASE_DIR%\zim\*.*
 for /d %%i in (%GH_PAGES_BASE_DIR%\zim\*.*) do rmdir /q /s %%i
 
+echo.
 echo 前一次的静态 HTML 站点内容已经被清空。
 pause
 
@@ -43,6 +44,7 @@ REM ** do publish to github operations
 REM ** 
 %ZIM_CMD% --export -r -O --template %GH_PAGES_BASE_DIR%\templates\ZeroFiveEight.html --index-page index -o %GH_PAGES_BASE_DIR%\zim %ZIM_FILE%
 
+echo.
 echo 新的静态 HTML 站点内容已经生成完毕。
 pause
 
