@@ -1,6 +1,6 @@
 #!/bin/sh
 
-./zim_refresh_site_content.bat
+./rebuild_pages.bat
 
 find ./zim -name "*.html" -exec sed -i -r 's/src=".*\/http:\/([^"]*)"/src="http:\/\/\1"/ig' '{}' \; 
 
