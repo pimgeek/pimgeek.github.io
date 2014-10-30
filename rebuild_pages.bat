@@ -42,7 +42,7 @@ pause
 REM ** 
 REM ** do publish to github operations
 REM ** 
-%ZIM_CMD% --index %ZIM_FILE%
+REM %ZIM_CMD% --index %ZIM_FILE%
 %ZIM_CMD% --export -r -O --template %GH_PAGES_BASE_DIR%\templates\ZeroFiveEight.html --index-page index -o %GH_PAGES_BASE_DIR%\zim %ZIM_FILE%
 
 echo 新的静态 HTML 站点内容已经生成完毕。
