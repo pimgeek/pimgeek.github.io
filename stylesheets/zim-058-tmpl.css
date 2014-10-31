@@ -75,38 +75,42 @@ img,embed {
 }
 #content a {
   color:#CE5C00;
-  text-decoration: none;
+  text-decoration:none;
 }
 #content a:hover {
-  text-decoration: underline;
+  text-decoration:underline;
 }
 #content a:active {
-  text-decoration: underline;
+  text-decoration:underline;
 }
 #content ul {
   padding:0px 5% 0px 5%;
   margin:0px 0px 0px 0px;
 }
 #content strike {
-  color: grey;
+  color:grey;
 }
 #content u {
-  text-decoration: none;
-  background-color: yellow;
+  text-decoration:none;
+  background-color:yellow;
 }
 #content tt {
-  color: #2e3436;
+  color:#2e3436;
+  background-color:gainsboro;
+  font-family:monospace;
+  font-size:110%;
+  padding:2.2%;
 }
 #content pre {
-  color: #2e3436;
-  margin-left: 2.8%;
+  color:#2e3436;
+  margin-left:2.8%;
 }
 .backlinks {
   color:gray;
 }
 hr.footnotes {
-  width: 20%;
-  margin-left: 0;
+  width:20%;
+  margin-left:0;
 }
 @media print{
   #navigation{
