@@ -354,7 +354,6 @@ footer p + p {
   }
 }
 
-// pimgeek custom
 #profile-img-frame {
   float:left;
   margin-right:15px;
@@ -375,3 +374,4 @@ footer p + p {
 .float-stopper {
   clear:both;
 }
+
