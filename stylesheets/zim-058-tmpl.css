@@ -118,5 +118,8 @@ hr.footnotes {
   }
 }
 #bdcs {
-  max-width:95%;
+  max-width:95% !important;
+}
+.bdcs-search-form-input {
+  max-width:60% !important;
 }
