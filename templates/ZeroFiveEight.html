@@ -42,10 +42,19 @@
       </span>
 
       [% IF not loop.last %]<hr class='pageseparator'/>[% END %]
+
+        <!-- 抽取文章收录至多说评论框时的url,用于保持评论序列-->
+        [% SET data_url = "" %]
+	<!--[% FOR hd IN page.headings(5) %]--> 
+        [% IF hd.level == 5 and hd.heading.startswith('data-url#') %]
+          [% SET data_url = hd.heading.replace('data-url#','') %]
+        [% END %]
+	<!--[% END %]-->
+
       <!--[% END %]-->
 
       <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key='[% page.name.replace(":","/") %]' data-title='[% page.name.replace(":","/") %]' data-url='[% site_domain %]/zim/[% page.name.replace(":","/") %].html'></div>
+      <div class="ds-thread" data-thread-key='[% page.name.replace(":","/") %]' data-title='[% page.name.replace(":","/") %]' data-url='[% data_url %]'></div>
       <!-- 多说评论框 end -->
 
       <!-- 多说公共JS代码 start (一个网页只需插入一次) -->

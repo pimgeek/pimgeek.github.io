@@ -13,6 +13,9 @@ h1,h2,h3,h4,h5,h6 {
   font-weight:300;
   margin:4% 0px 2% 0px;
 }
+#content h5 {
+  color:transparent;
+}
 h1 {
   line-height:150%;
 }
