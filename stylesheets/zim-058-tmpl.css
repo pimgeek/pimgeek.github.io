@@ -29,6 +29,8 @@ img,embed {
   margin-right:auto;
   padding:1%;
   border:1px solid lightgray;
+}
+img {
   border-radius:15px;
 }
 .wrapper {
