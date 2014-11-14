@@ -112,6 +112,7 @@ img {
 #content pre {
   color:#2e3436;
   margin-left:2.8%;
+  white-space:pre-wrap;
 }
 .backlinks {
   color:gray;
