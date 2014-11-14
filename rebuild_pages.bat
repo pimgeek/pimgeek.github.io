@@ -10,21 +10,24 @@ REM **
 REM ** define ZIM_DIR and GH_PAGES_BASE_DIR
 REM **
 
-set START_PATH=%CD%
-set START_DRV=%CD:~0,2%
+set GH_PAGES_BASE_DIR=%CD%
+set GH_PAGES_BASE_DIR_DRV=%CD:~0,2%
 set ZIM_CMD=r:\_tool\zim\App\ZimDesktopWiki\zim.exe
 set GIT_CMD=d:\pim-wudi\_tool\dev-lang\cygwin\bin\git.exe
-set GH_PAGES_BASE_DIR=r:\_dev\github\pimgeek.github.io
-set GH_PAGES_BASE_DIR_DRV=%GH_PAGES_BASE_DIR:~0,2%
 set ZIM_FILE=r:\_zim\pub\notebook.zim
 
 dir %GH_PAGES_BASE_DIR%\zim
-IF ERRORLEVEL 0 goto DO_PUB
+IF ERRORLEVEL 1 goto END
+dir %ZIM_CMD%
+IF ERRORLEVEL 1 goto END
+dir %GIT_CMD%
+IF ERRORLEVEL 1 goto END
+dir %ZIM_FILE%
 IF ERRORLEVEL 1 goto END
 
 :DO_PUB
 REM ** 
-REM ** switch to GH_PAGES_BASE_DIR directory
+REM ** switch to GH_PAGES_BASE_DIR\zim directory
 REM ** 
 %GH_PAGES_BASE_DIR_DRV%
 cd %GH_PAGES_BASE_DIR%\zim
@@ -49,9 +52,14 @@ echo 新的静态 HTML 站点内容已经生成完毕。
 pause
 
 REM ** 
-REM ** return to start drive and path
+REM ** return to original drive and path
 REM ** 
-%START_DRV%
-cd %START_PATH%
+%GH_PAGES_BASE_DIR_DRV%
+cd %GH_PAGES_BASE_DIR%
+goto END
+
+:ERR
+echo zim 发布环境尚未准备好，请检查。
+pause
 
 :END
