@@ -117,6 +117,12 @@ img {
 .backlinks {
   color:gray;
 }
+.backlinks a {
+  background-color:lightgoldenrodyellow;
+  border-radius:10px;
+  padding:1%;
+  line-height:300%;
+}
 hr.footnotes {
   width:20%;
   margin-left:0;
