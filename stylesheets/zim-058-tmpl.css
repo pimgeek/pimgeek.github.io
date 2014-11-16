@@ -121,7 +121,14 @@ img {
   background-color:lightgoldenrodyellow;
   border-radius:10px;
   padding:1%;
-  line-height:300%;
+  line-height:250%;
+}
+p a.page {
+  background-color:aquamarine;
+  border-radius:10px;
+  padding:1%;
+  line-height:250%;
+  color:navy !important;
 }
 hr.footnotes {
   width:20%;
