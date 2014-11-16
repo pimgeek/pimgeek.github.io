@@ -100,7 +100,7 @@ img {
 }
 #content u {
   text-decoration:none;
-  background-color:yellow;
+  border-bottom:3px solid lightskyblue;
 }
 #content tt {
   color:#2e3436;
