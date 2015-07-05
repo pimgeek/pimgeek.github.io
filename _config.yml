@@ -8,3 +8,6 @@ github_username:  pimgeek
 
 # Build settings
 markdown: kramdown
+
+source: _jksrc
+destination: blog
