@@ -1,0 +1,19 @@
+---
+layout: default
+reader-title: 首页
+---
+
+<h1>{{ page.reader-title}}</h1>
+
+<div>
+  <ul>
+  {% for post in site.posts %}
+    <li>
+      <span>{{ post.date | date:'%Y-%m-%d' }}</span>
+      <a href='{{ post.url | prepend: site.baseurl | prepend: site.url }}'>
+        <b>{{ post.reader-title }}</b>
+      </a> 
+    </li>
+  {% endfor %}
+  </ul>
+</div>

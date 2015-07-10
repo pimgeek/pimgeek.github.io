@@ -8,7 +8,7 @@
     <meta name="description" content="让思考转起来">
     <meta name="author" content="pimgeek">
     
-    <link rel="canonical" href="/blog/">
+    <link rel="canonical" href="/blog/.bak">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/blog/css/pixyll.css" type="text/css">
@@ -25,7 +25,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="思圆笔记">
     <meta property="og:description" content="让思考转起来">
-    <meta property="og:url" content="/">
+    <meta property="og:url" content="/index.html.bak">
     <meta property="og:site_name" content="思圆笔记">
 
     <!-- Icons -->
@@ -67,47 +67,26 @@
 
     <div class="post p2 p-responsive wrap" role="main">
       <div class="measure">
-        <div class="home">
+        <h1>首页</h1>
 
-  <div class="posts">
-    
-      <div class="post">
-        <p class="post-meta">Jul 10, 2015</p>
-        <a href="/blog/%E7%BF%BB%E8%AF%91%E7%BB%83%E4%B9%A0/2015/07/10/be-for-yourself-2/" class="post-link"><h3 class="h2 post-title">为了你自己（二）</h3></a>
-        <p class="post-summary">
-          
-            <p>更进一步，如果你不肯行动起来帮助自己，又怎么能真正地帮助别人呢？</p>
-
-          
-        </p>
-      </div>
-    
-      <div class="post">
-        <p class="post-meta">Jul 9, 2015</p>
-        <a href="/blog/%E7%BF%BB%E8%AF%91%E7%BB%83%E4%B9%A0/2015/07/09/be-for-yourself-1/" class="post-link"><h3 class="h2 post-title">为了你自己（一）</h3></a>
-        <p class="post-summary">
-          
-            <p>为了你自己的幸福，无论你打算采取什么样的措施——包括使用本书给出的实践方法——你都不得不站在自己的一边。不是为了反对别人，而是为了你自己。</p>
-
-          
-        </p>
-      </div>
-    
-  </div>
-
-  <div class="pagination clearfix mb1 mt4">
-  <div class="left">
-    
-      <span class="pagination-item disabled">Newer</span>
-    
-  </div>
-  <div class="right">
-    
-      <span class="pagination-item disabled">Older</span>
-    
-  </div>
-</div>
-
+<div>
+  <ul>
+  
+    <li>
+      <span>2015-07-10</span>
+      <a href='/blog/%E7%BF%BB%E8%AF%91%E7%BB%83%E4%B9%A0/2015/07/10/be-for-yourself-2/'>
+        <b>为了你自己（二）</b>
+      </a> 
+    </li>
+  
+    <li>
+      <span>2015-07-09</span>
+      <a href='/blog/%E7%BF%BB%E8%AF%91%E7%BB%83%E4%B9%A0/2015/07/09/be-for-yourself-1/'>
+        <b>为了你自己（一）</b>
+      </a> 
+    </li>
+  
+  </ul>
 </div>
 
       </div>
