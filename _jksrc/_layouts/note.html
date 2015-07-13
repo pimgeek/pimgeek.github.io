@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% assign minutes = content | strip_html | strip_newlines | split: "" | size | divided_by:160 %}
+{% assign minutes = content | strip_html | strip_newlines | size | divided_by:160 %}
 {% if minutes == 0 %}
 {% assign minutes = 1 %}
 {% endif %}
@@ -13,7 +13,7 @@ layout: default
   {% if page.update_date %}
     <span class="post-meta">最后更新于: {{ page.update_date | date: "%Y 年 %m 月 %d 日" }}</span><br>
   {% endif %}
-  <span class="post-meta small">大概阅读时间：{{ minutes }} 分钟</span>
+  <!-- <span class="post-meta small">阅读时间估计：{{ minutes }} 分钟</span> -->
 </div>
 
 <article class="post-content">
