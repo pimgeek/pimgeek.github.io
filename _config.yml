@@ -50,7 +50,12 @@ share_hackernews: false
 markdown:     redcarpet
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
-permalink:    pretty
-paginate:     3
+permalink:    notes/:title.html
+#paginate:     3
 sass:
   compressed: true
+
+collections:
+  notes:
+    output: true
+    permalink: notes/:title.html

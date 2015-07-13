@@ -5,20 +5,27 @@ layout: default
 <div class="home">
 
   <div class="posts">
-    {% for post in paginator.posts %}
+    {% for note in site.notes %}
       <div class="post">
-        <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
-        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h2 post-title">{{ post.reader-title }}</h3></a>
+        <p class="post-meta">{{ note.date | date: "%b %-d, %Y" }}</p>
+        <a href="{{ note.url | prepend: site.baseurl }}" class="post-link">
+          <h3 class="h2 post-title">{{ note.reader-title }}</h3>
+        </a>
         <p class="post-summary">
-          {% if post.summary %}
-            {{ post.summary }}
+          {% if note.summary %}
+            {{ note.summary }}
           {% else %}
-            {{ post.excerpt }}
+            {% assign truncatedContent = '' %}
+            {% assign paragraphs = note.content | split:'</p>' %}
+            {% for paragraph in paragraphs limit:1 %}
+              {{ truncatedContent | append: paragraph }}
+              {{ truncatedContent | append: '</p>' }}
+            {% endfor %}
           {% endif %}
         </p>
       </div>
+      <b>
+      </b>
     {% endfor %}
   </div>
-
-  {% include pagination.html %}
 </div>
