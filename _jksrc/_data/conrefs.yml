@@ -1,3 +1,21 @@
+conref-intro:
+  atoz-sample: |
+    A quick brown fox jumps over the lazy dog.
+  self-reference-sample: |
+    这段文字来自 jekyll 源码目录下的 _data 目录下的 conrefs.yml。
+
+    在 conrefs.yml 文件中，可以用 YAML 语法定义一系列可重复引用的文本段落，比如：
+
+    ```yaml
+
+    help-doc:
+      sample-conref: |
+        A quick brown fox jumps over the lazy dog.
+
+    ```
+
+    并且用 Liquid 模板语法引用这段文本，比如：{{ site.data.conrefs.help-doc.sample-conref }}
+  
 good-to-know-earlier:
   focus-first: |
     只要记住四个字——“回归专注”——你就赚了。
