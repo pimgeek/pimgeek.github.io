@@ -1,9 +1,9 @@
-{% for page in site.pages %}
-  <a href="{{ page.url }}">{{ page.title }}</a>
-{% endfor %}
-
+<ul>
 {% for cat in site.data.category %}
   {% assign key = cat[0] %}
   {% assign value = cat[1] %}
+  <li>
     <a href="{{ site.baseurl }}/category/{{ key | downcase | replace:' ','-'}}">{{ value.name }}</a>
+  </li>
 {% endfor %}
+</ul>

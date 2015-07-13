@@ -2,7 +2,7 @@
 layout: note
 date: 2015-07-09
 reader-title: 为了你自己（一）
-category: 翻译练习
+category: translation
 title: be-for-yourself
 ---
 

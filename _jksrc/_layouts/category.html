@@ -1,0 +1,13 @@
+---
+layout: home
+---
+
+{% for note in site.notes %}
+  <ul>
+    {% if note.category == page.title %}
+      <li>
+        <a href="{{ note.url | prepend: site.baseurl }}">{{ note.reader-title }}</a>
+      </li>
+    {% endif %}
+  </ul>
+{% endfor %}
