@@ -8,13 +8,13 @@ layout: null
     <description>{{ site.description | xml_escape }}</description>
     <link>{{ site.url }}{{ site.baseurl }}/</link>
     <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
+    {% for note in site.notes limit:900 %}
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
+        <title>{{ note.reader-title | xml_escape }}</title>
+        <description>{{ note.content | xml_escape }}</description>
+        <pubDate>{{ note.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+        <link>{{ note.url | prepend: site.baseurl | prepend: site.url }}</link>
+        <guid isPermaLink="true">{{ note.url | prepend: site.baseurl | prepend: site.url }}</guid>
       </item>
     {% endfor %}
   </channel>
