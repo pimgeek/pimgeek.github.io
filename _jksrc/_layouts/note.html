@@ -2,18 +2,18 @@
 layout: default
 ---
 
-{% assign minutes = content | number_of_words | divided_by: 180 %}
+{% assign minutes = content | strip_html | strip_newlines | split: "" | size | divided_by:160 %}
 {% if minutes == 0 %}
 {% assign minutes = 1 %}
 {% endif %}
 
 <div class="post-header mb2">
   <h1>{{ page.reader-title }}</h1>
-  <span class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</span><br>
+  <span class="post-meta">{{ page.date | date: "%Y 年 %m 月 %d 日" }}</span><br>
   {% if page.update_date %}
-    <span class="post-meta">Updated: {{ page.update_date | date: "%b %-d, %Y" }}</span><br>
+    <span class="post-meta">最后更新于: {{ page.update_date | date: "%Y 年 %m 月 %d 日" }}</span><br>
   {% endif %}
-  <span class="post-meta small">{{ minutes }} minute read</span>
+  <span class="post-meta small">大概阅读时间：{{ minutes }} 分钟</span>
 </div>
 
 <article class="post-content">
