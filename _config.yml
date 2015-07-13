@@ -56,6 +56,9 @@ sass:
   compressed: true
 
 collections:
+  category:
+    output: true
+    permalink: category/:path/index.html
   notes:
     output: true
     permalink: notes/:title.html
