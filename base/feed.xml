@@ -3,8 +3,8 @@
   <channel>
     <title>思圆笔记</title>
     <description>让思考转起来</description>
-    <link>/blog/</link>
-    <atom:link href="/blog/feed.xml" rel="self" type="application/rss+xml" />
+    <link>/base/</link>
+    <atom:link href="/base/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>为了你自己（一）</title>
@@ -15,10 +15,12 @@
 &lt;p&gt;想想看，当你作为某人的好朋友时，会有怎样的表现？然后问问自己：对我自己而言，我是否也是那样的朋友？&lt;/p&gt;
 
 &lt;p&gt;如果不是的话，你可能对自己有点过于苛刻了，过快地感觉自己不合格，过分轻视自己每天的工作成果；或者在保护自己免受屈待、诉别人自己真正需要什么这些方面太不上心了；或者在内心痛苦面前过于逆来顺受，又或者在处理这些问题时过于迟钝——无论是在自己的头脑中，还是在更广阔的外部世界里——迟迟不去做些什么来让你的生活变得更好。&lt;/p&gt;
+
+&lt;p&gt;原书链接 - https://www.rickhanson.net/writings/just-one-thing/&lt;/p&gt;
 </description>
         <pubDate>Thu, 09 Jul 2015 00:00:00 +0000</pubDate>
-        <link>/blog/notes/be-for-yourself.html</link>
-        <guid isPermaLink="true">/blog/notes/be-for-yourself.html</guid>
+        <link>/base/notes/be-for-yourself.html</link>
+        <guid isPermaLink="true">/base/notes/be-for-yourself.html</guid>
       </item>
     
       <item>
@@ -28,8 +30,19 @@
 &lt;p&gt;本书所介绍了很多实践方法，所有方法的基础都是期望自己变好，让你自己的悲伤，自己的需求，自己的需求和梦想对你自己而言变得更重要。有了这个基础，无论你为自己做什么，都会有种实实在在的活力在背后支撑！&lt;/p&gt;
 </description>
         <pubDate>Fri, 10 Jul 2015 00:00:00 +0000</pubDate>
-        <link>/blog/notes/for-your-self-2.html</link>
-        <guid isPermaLink="true">/blog/notes/for-your-self-2.html</guid>
+        <link>/base/notes/for-your-self-2.html</link>
+        <guid isPermaLink="true">/base/notes/for-your-self-2.html</guid>
+      </item>
+    
+      <item>
+        <title>只做一件事-52-爱（一）</title>
+        <description>&lt;p&gt;爱意味着要有勇气，英文中勇气的词根来自单词“Heart（心）”。我曾在登山旅途中遇到过很多相当危险的情况，但相比之下，在我对第一位令我怦然心动的女友说爱她的前一刻，我感到更加害怕。付出爱需要勇气：在有可能得不到回报时去爱需要勇气，意识到总有一天要与所爱的一切分离也需要勇气，为爱毫无保留、全力以赴更需要勇气。有时候我会问自己：我真的足够勇敢，可以去爱吗？&lt;/p&gt;
+
+&lt;p&gt;每一天都给了我，也给了你，足够多的机会去爱。&lt;/p&gt;
+</description>
+        <pubDate>Mon, 13 Jul 2015 00:00:00 +0000</pubDate>
+        <link>/base/notes/just-one-thing-52-love-1-md.html</link>
+        <guid isPermaLink="true">/base/notes/just-one-thing-52-love-1-md.html</guid>
       </item>
     
       <item>
@@ -44,8 +57,8 @@
 连点三次后多半会忘记初始目的，陷入时间黑洞。
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Sun, 01 Dec 2013 00:00:00 +0000</pubDate>
-        <link>/blog/notes/things-that-are-good-for-you-if-known-earlier.html</link>
-        <guid isPermaLink="true">/blog/notes/things-that-are-good-for-you-if-known-earlier.html</guid>
+        <link>/base/notes/things-that-are-good-for-you-if-known-earlier.html</link>
+        <guid isPermaLink="true">/base/notes/things-that-are-good-for-you-if-known-earlier.html</guid>
       </item>
     
   </channel>

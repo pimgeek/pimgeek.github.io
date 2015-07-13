@@ -3,10 +3,11 @@ title:       思圆笔记
 email:       wudibiz(#)163.com
 author:      pimgeek
 description: "让思考转起来"
-baseurl:     "/blog"
+baseurl:     "/base"
 url:         ""
+duoshuo_url: "http://pimgeek.github.io"
 source:      '_jksrc'
-destination: 'blog'
+destination: 'base'
 
 # Google analytics
 google_analytics:
@@ -21,8 +22,9 @@ show_post_footers:  false
 disqus_shortname:
 
 # Social icons
+show_duoshuo: true
 show_social_icons: false
-github_username:
+github_username: pimgeek
 stackoverflow_id:
 twitter_username:
 google_plus_id:
@@ -55,6 +57,7 @@ permalink:    notes/:title.html
 sass:
   compressed: true
 
+# Collection 设定
 collections:
   category:
     output: true
