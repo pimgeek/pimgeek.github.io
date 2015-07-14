@@ -7,3 +7,7 @@ date: 2013-12-01
 ---
 
 {{ site.data.conrefs.good-to-know-earlier.focus-first }}
+
+{{ site.data.conrefs.good-to-know-earlier.natural-science-layers }}
+
+{{ site.data.conrefs.good-to-know-earlier.human-knowledge-profile }}
