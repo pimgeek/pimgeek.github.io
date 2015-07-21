@@ -9,9 +9,7 @@ layout: home
   {% for note in sorted_notes reversed %}
     <!-- 避免输出草稿笔记 -->
     {% unless note.draft == true %}
-      {% if note.category == page.title %}
-        {% include display-item.html item=note %}
-      {% endif %}
+      {% include display-item.html item=note %}
     {% endunless %}
   {% endfor %}
 </div>

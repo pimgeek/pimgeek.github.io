@@ -1,0 +1,12 @@
+{% assign item=include.item %}
+<div class="post">
+  <p class="post-meta">{{ item.date | date: "%Y 年 %m 月 %d 日" }}</p>
+  <a href="{{ item.url | prepend: site.baseurl }}" class="post-link">
+    <h3 class="h2 post-title">{{ item.reader-title }}</h3>
+  </a>
+  <p class="post-summary">
+    {% if item.summary %}
+      {{ item.summary }}
+    {% endif %}
+  </p>
+</div>

@@ -1,6 +1,7 @@
 ---
 layout: note
 reader-title: 相见恨晚的知识分享
+summary: 如何早点发现自己最需要的知识？
 title: things-that-are-good-for-you-if-known-earlier
 category: zhihu
 date: 2013-12-01

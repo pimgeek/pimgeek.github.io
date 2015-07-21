@@ -1,0 +1,6 @@
+{% assign truncatedContent = '' %}
+{% assign paragraphs = include.raw-cont | split:'</p>' %}
+{% for paragraph in paragraphs limit:1 %}
+  {{ truncatedContent | append: paragraph }}
+  {{ truncatedContent | append: '</p>' }}
+{% endfor %}

@@ -2,3 +2,7 @@ translation:
   name: 翻译
 zhihu:
   name: 知乎
+tools:
+  name: 工具
+gtd:
+  name: GTD
