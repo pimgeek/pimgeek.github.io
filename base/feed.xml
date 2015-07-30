@@ -7,6 +7,17 @@
     <atom:link href="/base/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>使用 asciinema 制作命令行回放</title>
+        <description>&lt;p&gt;实例，展示 ls 的用法。&lt;/p&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://asciinema.org/a/19596.js&quot; id=&quot;asciicast-19596&quot; async&gt;&lt;/script&gt;
+</description>
+        <pubDate>Thu, 30 Jul 2015 00:00:00 +0000</pubDate>
+        <link>/base/notes/asciinema-demo.html</link>
+        <guid isPermaLink="true">/base/notes/asciinema-demo.html</guid>
+      </item>
+    
+      <item>
         <title>为了你自己（一）</title>
         <description>&lt;p&gt;为了你自己的幸福，无论你打算采取什么样的措施——包括使用本书给出的实践方法——你都不得不站在自己的一边。不是为了反对别人，而是为了你自己。&lt;/p&gt;
 
