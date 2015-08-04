@@ -826,8 +826,8 @@ pre {
 
 blockquote {
   padding: 1.33em;
-  font-style: italic;
-  border-left: 5px solid #7a7a7a; }
+  border-left: 5px solid #7a7a7a;
+  background-color: #eeeeee; }
 
 blockquote footer {
   font-size: .85rem;
