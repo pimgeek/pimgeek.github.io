@@ -1,6 +1,6 @@
 ---
 layout: note
-reader-title: 只做一件事-52-爱（一）
+reader-title: 只做一件事：第五十二篇 - 爱
 title: just-one-thing-52-love-1.md
 category: translation
 date: 2015-07-13

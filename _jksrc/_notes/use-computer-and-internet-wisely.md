@@ -21,4 +21,4 @@ tag: ['tools', 'pim']
 
 参考阅读：
 
-* "软瘾"就这样吞噬着我们
+* 京江晚报 - [警惕 “软瘾” 绑架现代人](http://www.jsw.com.cn/site3/jjwb/html/2011-08/05/content_1578475.htm)  
