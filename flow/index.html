@@ -2,6 +2,7 @@
 
 <head>
   <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="ui.css" />
   <script src="http://cdnjs.cloudflare.com/ajax/libs/rxjs/2.2.26/rx.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/rxjs/2.2.26/rx.async.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/rxjs/2.2.26/rx.coincidence.js"></script>
@@ -11,29 +12,18 @@
 </head>
 
 <body>
-  <textarea id="input"></textarea>
-  <textarea id="output"></textarea>
-  <script type="text/javascript">
-  var inputPort = document.querySelector('#input');
-  var outputPort = document.querySelector('#output');
-  var inputStream = Rx.Observable.fromEvent(inputPort, 'input');
-
-  var readInputStream = inputStream.startWith('start input')
-    .map(function() {
-      return inputPort.value;
-    });
-  var outputStream = readInputStream;
-  var subscription = outputStream.subscribe(
-    function(val) {
-      outputPort.value = val;
-    },
-    function(err) {
-      console.log('出错啦: ' + err);
-    },
-    function() {
-      console.log('完成啦。');
-    });
-  </script>
+  <div class="container">
+    <div class="input-pane">
+      <textarea id="input"></textarea>
+    </div>
+    <div class="output-pane">
+      <textarea id="output"></textarea>
+    </div>
+    <div class="spacer"></div>
+    <div class="pipe-pane">&nbsp;</div>
+    <div class="proc-pane">&nbsp;</div>
+  </div>
+  <script type="text/javascript" src="proc.js"></script>
 </body>
 
 </html>
