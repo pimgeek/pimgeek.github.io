@@ -1,4 +1,7 @@
 textarea {
+  resize:none;
+  overflow-y:auto;
+  overflow-x:hidden;
   width:88%;
   height:88%;
   display:block;
