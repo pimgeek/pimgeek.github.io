@@ -10,6 +10,16 @@
     clicks = clicks + 1;
     document.getElementById('counted-clicks').innerHTML = clicks + ' 次点击';
   }
+  window.onbeforeunload = function (e) {
+    var e = e || window.event;
+    currNum = document.getElementById('counted-clicks').innerHTML.split(' ')[0];
+    alertMsg = "关闭前请确认当前数字：" + currNum;
+    if (e) {
+      e.returnValue = alertMsg;
+    } else {
+      return alertMsg;
+    }
+  }
   // -->
   </script>
   <style type="text/css">
@@ -39,7 +49,7 @@
   <div id="panel">
     <div id="counted-clicks">0 次点击</div>
     <br />
-    <button id="click-button" onclick="addOne()">点击后 +1</button>
+    <button id="click-button" onclick="addOne();">点击后 +1</button>
   </div>
 </body>
 
