@@ -10,29 +10,29 @@
     clicks = clicks + 1;
     document.getElementById('counted-clicks').innerHTML = clicks + ' 次点击';
   }
-  window.onbeforeunload = function (e) {
-    var e = e || window.event;
-    currNum = document.getElementById('counted-clicks').innerHTML.split(' ')[0];
-    alertMsg = "关闭前请确认当前数字：" + currNum;
-    if (e) {
-      e.returnValue = alertMsg;
-    } else {
-      return alertMsg;
+  window.onbeforeunload = function(e) {
+      var e = e || window.event;
+      currNum = document.getElementById('counted-clicks').innerHTML.split(' ')[0];
+      alertMsg = "请确认当前点击总数：" + currNum;
+      if (e) {
+        e.returnValue = alertMsg;
+      } else {
+        return alertMsg;
+      }
     }
-  }
-  // -->
+    // -->
   </script>
   <style type="text/css">
   #panel {
     text-align: center;
   }
-  
+
   #counted-clicks {
     font-size: 128px;
     text-align: center;
     line-height: 180%;
   }
-  
+
   #click-button {
     font-weight: bolder;
     font-family: serif;
