@@ -1,0 +1,75 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>英文字母盲打训练工具</title>
+</head>
+
+<body id="charField">
+  <h3>请按下这个按键：[<span id="prompt"> </span>]</h3>
+  <h3>您实际按下的是：[<span id="actualKeyPress"> </span>]</h3>
+  <br />
+  <script type="text/javascript">
+  var charField = document.getElementById("charField");
+  var prompt = document.getElementById("prompt");
+  var actualKeyPress = document.getElementById("actualKeyPress");
+  var toBeTypedSeries = "abcdefghijklmnopqrstuvwxyz`~!@#$%^&*()-=_+[]{}\\|::\'\",.<>/?".split("");
+  var reviewTimeSeries = [2, 3, 5, 8, 13, 21, 34, 55, 89, 144];
+  var expHash = {};
+  //
+  for (ch of toBeTypedSeries) {
+    expHash[ch] = 0;
+  }
+
+  function putChar() {
+    prompt.innerText = toBeTypedSeries[0];
+    actualKeyPress.style.backgroundColor = "white";
+    actualKeyPress.innerText = " ";
+  }
+
+  function shiftSteps(aChar) {
+    if (expHash[aChar] < 0) {
+      return 3;
+    } else {
+      return reviewTimeSeries[expHash[aChar]];
+    }
+  }
+
+  function doShift(toBeTypedSeries, steps) {
+    var aChar = toBeTypedSeries.shift(1);
+    var len = toBeTypedSeries.length;
+    //
+    if (steps >= len) {
+      for (var idx = 0; idx < (steps - len + 1); idx++) {
+        var randomChar = toBeTypedSeries[Math.round(Math.random() * len)];
+        toBeTypedSeries.push(randomChar);
+      }
+    }
+    toBeTypedSeries.splice(steps, 0, aChar);
+  }
+
+  putChar();
+
+  charField.onkeypress = function(e) {
+    var e = window.event || e;
+    var charCode = (typeof e.which == "number") ? e.which : e.keyCode;
+    var charStr = String.fromCharCode(charCode);
+    //
+    if (charCode > 0) {
+      actualKeyPress.innerText = charStr;
+      if (charStr === prompt.innerText) {
+        actualKeyPress.style.backgroundColor = "lawngreen";
+        expHash[charStr] = expHash[charStr] + 1;
+      } else {
+        actualKeyPress.style.backgroundColor = "orange";
+        expHash[charStr] = expHash[charStr] - 1;
+      }
+      doShift(toBeTypedSeries, shiftSteps(charStr));
+      console.log(toBeTypedSeries);
+      setTimeout(putChar, 100);
+    }
+  }
+  </script>
+</body>
+
+</html>
