@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Clip To WorkFlowy</title>
+<style>
+body {
+  font-family:sans-serif;
+  text-align:left;
+  margin:80px;
+  }
+  a:link {color: #6ACFCD}
+  a:visited {color: Gray;}
+</style>
+</head>
+<body>
+<h1>Clip To WorkFlowy Bookmarklet v2.4</h1>
+<p><b>To install, drag the link to your bookmarks bar.</b></p>
+<br>
+<p><b><a href="javascript:(function(){var%20inbox='https://workflowy.com/#';function%20eopml(i){var%20o=i.replace(/&amp;/g,'&amp;amp;amp;').replace(/&lt;/g,'&amp;amp;lt;').replace(/&gt;/g,'&amp;amp;gt;').replace(/&quot;/g,'&amp;quot;').replace(/(\n)/g,'&amp;#10;');return%20(o);}var%20bullet=eopml(document.title);var%20link=eopml(location.href)+'%20';var%20selected=eopml(window.getSelection().toString());var%20isWorkFlowy=location.href.indexOf('workflowy.com/#');var%20isChrome=!!window.chrome;if(selected){link='..'+link+'&amp;#10;&amp;#10;';}if(isWorkFlowy!==-1){var%20bullet='&amp;lt;i&amp;gt;See:%20&amp;quot;'+bullet.replace(/%20-%20WorkFlowy$/,'')+'&amp;quot;&amp;lt;/i&amp;gt;';}var%20clip='&lt;opml&gt;&lt;body&gt;&lt;outline%20text=&quot;'+bullet+'&quot;%20_note=&quot;'+link+selected+'&quot;%20/&gt;&lt;/body&gt;&lt;/opml&gt;';if(isChrome&amp;&amp;clip.length&gt;2000){window.open(''+inbox+'/?q='+encodeURIComponent(clip)+'');}else{var%20userInput=prompt('1\)%20COPY%20the%20text%20below.%20(Ctrl+C\)%20or%20\(Cmd+C\)\n\n2\)%20OK%20=%20Launch%20WorkFlowy%20Home.\n%20%20%20%20CANCEL%20=%20Go%20to%20WorkFlowy%20manually.\n\n3\)%20PASTE%20into%20a%20new%20WorkFlowy%20bullet.%20%20%20\(v2.4\)\n',clip);if(userInput!==null){if(isWorkFlowy!==-1){location.href=inbox;}else{window.open(inbox);}}else{return;}}})()">Clip To WorkFlowy</a></b></p>
+<br>
+<br>
+<br>
+<p><a href="javascript:history.back()">Go Back</a></p>
+</body>
+</html>
