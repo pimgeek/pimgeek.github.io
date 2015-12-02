@@ -6,7 +6,7 @@ category: learn
 date: 2015-08-03
 ---
 
-<div class="wrapper">
+<div class="workflowy-wrapper">
   <iframe
     class="workflowy-embed"
     src="https://workflowy.com/embed/zqjZYylPaV"
