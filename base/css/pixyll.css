@@ -626,11 +626,12 @@ img {
 
 .workflowy-wrapper {
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  height: 300px; }
 
 .workflowy-embed {
-  height: 320px;
-  width: 95%;
+  height: 90%;
+  width: 98%;
   margin-top: 2%;
   border: 0; }
 
