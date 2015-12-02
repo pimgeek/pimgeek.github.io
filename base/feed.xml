@@ -55,6 +55,7 @@
   &lt;iframe
     class=&quot;workflowy-embed&quot;
     src=&quot;https://workflowy.com/embed/zqjZYylPaV&quot;
+    scrolling=&quot;no&quot;
     frameborder=&quot;0&quot;&gt;
   &lt;/iframe&gt;
 &lt;/div&gt;

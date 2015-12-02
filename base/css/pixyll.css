@@ -624,16 +624,23 @@ img {
   width: auto;
   max-width: 100%; }
 
+.spacer {
+  clear: both; }
+
 .workflowy-wrapper {
+  position: relative;
   margin: 0 auto;
   text-align: center;
-  height: 540px;
-  overflow-y: hidden; }
+  width: 94%;
+  height: 600px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; }
 
 .workflowy-embed {
-  height: 96%;
-  width: 98%;
-  margin-top: 2%;
+  position: relative;
+  width: 90%;
+  height: 100%;
+  margin-top: 10px;
   border: 0; }
 
 .site-wrap {
