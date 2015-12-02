@@ -9,6 +9,7 @@ layout: home
   {% for note in sorted_notes reversed %}
     <!-- 避免输出草稿笔记 -->
     {% unless note.draft == true %}
+      <!-- 把当前枚举的笔记对象传递给包含文件 -->
       {% include display-item.html item=note %}
     {% endunless %}
   {% endfor %}

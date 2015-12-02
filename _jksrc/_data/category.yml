@@ -6,5 +6,5 @@ tools:
   name: 工具
 gtd:
   name: GTD
-study:
-  name: 学习方法
+learn:
+  name: 学习法

@@ -1,5 +1,5 @@
 ---
 layout: category
-title: study
+title: learn
 ---
 
