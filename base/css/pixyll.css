@@ -627,10 +627,11 @@ img {
 .workflowy-wrapper {
   margin: 0 auto;
   text-align: center;
-  height: 300px; }
+  height: 540px;
+  overflow: hidden; }
 
 .workflowy-embed {
-  height: 90%;
+  height: 96%;
   width: 98%;
   margin-top: 2%;
   border: 0; }
