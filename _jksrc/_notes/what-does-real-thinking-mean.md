@@ -10,7 +10,7 @@ date: 2015-08-03
 
 <div class="responsive-wrapper">
   <iframe
-    class="workflowy-embed"
+    class="responsive-embed"
     src="https://workflowy.com/embed/zqjZYylPaV"
     scrolling="no"
     frameborder="0">
