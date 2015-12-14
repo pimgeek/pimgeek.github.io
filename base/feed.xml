@@ -51,7 +51,16 @@
     
       <item>
         <title>真正的思考，意味着从 _ _ _ _ _ _ 理解一件事</title>
-        <description>&lt;div class=&quot;responsive-wrapper&quot;&gt;
+        <description>&lt;p&gt;以下内容借助 workflowy.com 的无级缩放笔记列表工具制作。&lt;/p&gt;
+
+&lt;p&gt;浏览时可以借助拖拽和缩放查看未显示完整的笔记内容。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;在 PC 设备上，用鼠标拖拽可以移动笔记列表的可视区域，用鼠标点击笔记左侧的小圆点可以放大当前笔记。&lt;/li&gt;
+&lt;li&gt;在移动设备上，用手指拖拽可以移动笔记列表的可视区域，用手指点击笔记左侧的小圆点可以放大当前笔记。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;responsive-wrapper&quot;&gt;
   &lt;iframe
     class=&quot;workflowy-embed&quot;
     src=&quot;https://workflowy.com/embed/zqjZYylPaV&quot;
@@ -67,7 +76,7 @@
     
       <item>
         <title>学习的过程，犹如 _ _ _ _ 的切换</title>
-        <description>&lt;p&gt;以下内容借助 syncsp.com 的无极缩放绘图工具制作。&lt;/p&gt;
+        <description>&lt;p&gt;以下内容借助 syncsp.com 的无级缩放绘图工具制作。&lt;/p&gt;
 
 &lt;p&gt;浏览时可以借助拖拽和缩放查看绘图中没能完整显示出来的部分。&lt;/p&gt;
 

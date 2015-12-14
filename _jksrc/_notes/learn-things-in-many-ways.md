@@ -6,6 +6,8 @@ category: learn
 date: 2015-08-03
 ---
 
+{{ site.data.conrefs.embeded-tool-usage.workflowy }}
+
 <div class="responsive-wrapper">
   <iframe
     class="workflowy-embed"

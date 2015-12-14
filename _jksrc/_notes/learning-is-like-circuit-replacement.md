@@ -6,12 +6,7 @@ category: learn
 date: 2015-12-15
 ---
 
-以下内容借助 syncsp.com 的无极缩放绘图工具制作。
-
-浏览时可以借助拖拽和缩放查看绘图中没能完整显示出来的部分。
-
-  1. 在 PC 设备上，用鼠标拖拽可以移动绘图的可视区域，用滚轮可以放大或者缩小绘图。
-  2. 在移动设备上，用手指拖拽可以移动绘图的可视区域，用双指捏可以缩小绘图，反过来则可以放大绘图。
+{{ site.data.conrefs.embeded-tool-usage.syncsp }}
 
 <div class="responsive-wrapper">
   <iframe
