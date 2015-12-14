@@ -627,7 +627,7 @@ img {
 .spacer {
   clear: both; }
 
-.workflowy-wrapper {
+.responsive-wrapper {
   position: relative;
   margin: 0 auto;
   text-align: center;
@@ -636,7 +636,7 @@ img {
   overflow: auto;
   -webkit-overflow-scrolling: touch; }
 
-.workflowy-embed {
+.responsive-embed {
   position: relative;
   width: 90%;
   height: 100%;
