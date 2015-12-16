@@ -135,28 +135,36 @@
 <div class="spacer">&nbsp;</div>
 
 
-<!-- 多说评论框 start -->
-  <div class="ds-thread" data-thread-key="notes/use-computer-and-internet-effectively" data-title="如何有效地使用电脑和网络" data-url="http://pimgeek.github.io/base/notes/use-computer-and-internet-effectively.html"></div>
-<!-- 多说评论框 end -->
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"pimblog"};
-  (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';ds.async = true;
-    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0] 
-     || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
+
+
+
+
+
+
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname  = 'pimgeek';
+    var disqus_identifier = 'use-computer-and-internet-effectively';
+    var disqus_title = '如何有效地使用电脑和网络';
+    var disqus_url = 'http://' + document.domain + '/base/notes/use-computer-and-internet-effectively.html';
+
+    var disqus_config = function () {
+      this.page.identifier = disqus_identifier;
+      this.page.title = disqus_title;
+      this.page.url = disqus_url;
+    };
+
+    (function() {
+      var doc = document;
+      var dsq = doc.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      dsq.setAttribute('data-timestamp', +new Date());
+      (doc.head || doc.body).appendChild(dsq);
+    })();
   </script>
-<!-- 多说公共JS代码 end -->
-
-
-
-
-
-
+  <noscript>如果想使用 <a href="http://disqus.com/?ref_noscript">由 Disqus 提供的评论框</a>请确保你的浏览器支持 JavaScript.</noscript>
 
 
 
