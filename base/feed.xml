@@ -194,15 +194,15 @@
 
 &lt;p&gt;&lt;a href=&quot;http://i.teamkn.com/i/NR3Bd97m.png?imageMogr2/thumbnail/x1000&quot;&gt;&lt;img src=&quot;http://i.teamkn.com/i/NR3Bd97m.png?imageMogr2/thumbnail/x720&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;生成图片的原始码如下：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;... ...
+&lt;p&gt;生成图片的原始码大概是这样的：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;    ...
     &amp;quot;团队的目标&amp;quot; -&amp;gt; &amp;quot;个人对目标的思考&amp;quot;
     &amp;quot;个人对目标的思考&amp;quot; -&amp;gt; &amp;quot;目标描述&amp;quot;
     &amp;quot;目标描述&amp;quot; -&amp;gt; &amp;quot;个人对目标实现过程的思考&amp;quot;
     &amp;quot;目标描述&amp;quot; -&amp;gt; &amp;quot;个人对关键结果的思考&amp;quot;
     &amp;quot;个人对目标实现过程的思考&amp;quot; -&amp;gt; &amp;quot;目标实现过程描述&amp;quot;
     &amp;quot;个人对关键结果的思考&amp;quot; -&amp;gt; &amp;quot;关键结果描述&amp;quot;
-... ...
+    ...
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;再比如说：有一篇 &lt;a href=&quot;http://read.goodweb.cn/news/news_view.asp?newsid=44796&quot;&gt;探讨佛法的论理文章&lt;/a&gt;，它大概长成下面的样子：&lt;/p&gt;
 
@@ -214,8 +214,8 @@
 
 &lt;p&gt;&lt;a href=&quot;http://i.teamkn.com/i/RYgIJzBu.png?imageMogr2/thumbnail/x1000&quot;&gt;&lt;img src=&quot;http://i.teamkn.com/i/RYgIJzBu.png?imageMogr2/thumbnail/x360&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;生成图片的原始码如下：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;... ...
+&lt;p&gt;生成图片的原始码大概是这样的：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;    ...
     &amp;quot;味境&amp;quot; -&amp;gt; &amp;quot;六境&amp;quot;
     &amp;quot;触境&amp;quot; -&amp;gt; &amp;quot;六境&amp;quot;
     &amp;quot;法境&amp;quot; -&amp;gt; &amp;quot;六境&amp;quot;
@@ -228,7 +228,7 @@
     &amp;quot;眼、耳、鼻、舌、身内五处&amp;quot; -&amp;gt; &amp;quot;十色处（广义色）&amp;quot;
     &amp;quot;耳&amp;quot; -&amp;gt; &amp;quot;耳根&amp;quot;
     &amp;quot;耳识&amp;quot; -&amp;gt; &amp;quot;六识&amp;quot;
-... ...
+    ...
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Tue, 19 Jan 2016 00:00:00 +0000</pubDate>
         <link>/base/notes/what-about-turning-article-into-pic.html</link>
