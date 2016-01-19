@@ -7,4 +7,6 @@ tools:
 gtd:
   name: GTD
 learn:
-  name: 学习法
+  name: 学习
+pic:
+  name: 看图
