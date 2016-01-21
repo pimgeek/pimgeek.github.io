@@ -20,10 +20,10 @@ function dotGraphGen(partialOrders) {
   }
   return '' +
     'digraph {\n' +
-    '  rankdir="LR";\n' +
     '  graph [fontname="simhei" splines="polyline"]\n' +
     '  edge  [fontname="simhei"]\n' +
     '  node  [fontname="simhei" shape="box" width="1.68" height="0.1"]\n' +
+    '  // 以下为节点和有向边定义 ' +
     dotEdges +
     '}\n';
 }
