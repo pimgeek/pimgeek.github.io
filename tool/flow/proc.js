@@ -28,7 +28,7 @@ function dotGraphGen(partialOrders) {
     '}\n';
 }
 
-function id(val) {
+function duplicate(val) {
   return val;
 }
 
@@ -36,19 +36,21 @@ function x2(num) {
   return num * 2;
 }
 
-var readInputStream = inputStream.startWith('start|->|input')
-  .map(function() {
-    return inputPort.value;
-  });
-var outputStream = readInputStream
-  .map(dotGraphGen);
-var subscription = outputStream.subscribe(
-  function(val) {
-    outputPort.value = val;
-  },
-  function(err) {
-    console.log('出错啦: ' + err);
-  },
-  function() {
-    console.log('完成啦。');
-  });
+function loadProcessor(processor) {
+  var readInputStream = inputStream.startWith('1')
+    .map(function() {
+      return inputPort.value;
+    });
+  var outputStream = readInputStream
+    .map(processor);
+  var subscription = outputStream.subscribe(
+    function(val) {
+      outputPort.value = val;
+    },
+    function(err) {
+      console.log('出错啦: ' + err);
+    },
+    function() {
+      console.log('完成啦。');
+    });
+}
