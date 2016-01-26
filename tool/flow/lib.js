@@ -16,6 +16,16 @@ function partialOrder2DotEdge(str) {
   }
 }
 
+function dotEdge2PartialOrder(str) {
+  var patt = /"([^\"]+)" -> "([^\"]+)";*/g;
+  var result = patt.exec(str);
+  if (result === null) {
+    return str;
+  } else {
+    return result[1] + '|->|' + result[2];
+  }
+}
+
 function dotGraphGen(partialOrders) {
   partialOrdersArray = partialOrders.split('\n');
   var dotEdges = '';
@@ -32,8 +42,17 @@ function dotGraphGen(partialOrders) {
     '}\n';
 }
 
+function partialOrderGen(dotEdges) {
+  dotEdgesArray = dotEdges.split('\n');
+  var partialOrders = '';
+  for (dotEdge of dotEdgesArray) {
+    partialOrders += dotEdge2PartialOrder(dotEdge.trim()) + '\n';
+  }
+  return partialOrders;
+}
+
 function dotCodeTidy(dotCodeLines) {
-  var patt = /"(%[0-9]+)"([^;]+)label=([^,]+),\n\t\t([^;]+);/mg;
+  var patt = /(["%]*[0-9]+"*) ([^;]*)label=([^,]+),([^;]+);/mg;
   var nodeArray = [];
   var result = patt.exec(dotCodeLines);
   while (result != null) {
@@ -61,3 +80,4 @@ function dotCodeTidy(dotCodeLines) {
   }
   return dotCodeLines;
 }
+
