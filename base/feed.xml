@@ -106,6 +106,47 @@
       </item>
     
       <item>
+        <title>instaviz 绘图工具简介</title>
+        <description>&lt;p&gt;推荐一个新的思维示意图编辑器，可以在 iPad 上用，用起来很酷很拉风的哦！&lt;/p&gt;
+
+&lt;!-- &quot;Video For Everybody&quot; v0.4.1 by Kroc Camen of Camen Design &lt;camendesign.com/code/video_for_everybody&gt;
+     =================================================================================================================== &amp;ndash;&gt;
+
+&lt;!-- first try HTML5 playback: if serving as XML, expand `controls` to `controls=&quot;controls&quot;` and autoplay likewise       --&gt;
+
+&lt;!-- warning: playback does not work on iPad/iPhone if you include the poster attribute! fixed in iOS4.0                 --&gt;
+
+&lt;video width=&quot;640&quot; height=&quot;360&quot; controls preload=&quot;none&quot;&gt;
+    &lt;!-- MP4 must be first for iPad! --&gt;
+    &lt;source src=&quot;http://i.teamkn.com/i/V9I6mtNE.mp4&quot; type=&quot;video/mp4&quot; /&gt;&lt;!-- WebKit video    --&gt;
+&lt;/video&gt;
+
+&lt;!-- you *must* offer a download link as they may be able to play the file locally. customise this bit all you want --&gt;
+
+&lt;p&gt; &lt;strong&gt;下载这个视频：&lt;/strong&gt;
+    &lt;a href=&quot;http://i.teamkn.com/i/V9I6mtNE.mp4&quot;&gt;操作演示视频&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&quot;手指一圈就创建一个点&quot;&gt;手指一圈就创建一个点&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.teamkn.com/i/KCgl4xSk.png?imageMogr2/thumbnail/640x&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;手指一划就创建一条边&quot;&gt;手指一划就创建一条边&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.teamkn.com/i/zwwrY9cO.png?imageMogr2/thumbnail/640x&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;动态调整节点的位置和排布&quot;&gt;动态调整节点的位置和排布&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.teamkn.com/i/CRTVyHvz.png?imageMogr2/thumbnail/640x&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;这个工具叫做 &lt;a href=&quot;https://itunes.apple.com/app/id1035029848?mt=8&quot;&gt;instaviz&lt;/a&gt;，目前只支持 iOS 设备。&lt;/p&gt;
+</description>
+        <pubDate>Wed, 27 Jan 2016 00:00:00 +0000</pubDate>
+        <link>/base/notes/quick-intro-to-instaviz.html</link>
+        <guid isPermaLink="true">/base/notes/quick-intro-to-instaviz.html</guid>
+      </item>
+    
+      <item>
         <title>相见恨晚的知识分享</title>
         <description>&lt;h3 id=&quot;回归专注&quot;&gt;回归专注&lt;/h3&gt;
 
