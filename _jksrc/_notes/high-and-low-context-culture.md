@@ -1,8 +1,8 @@
 ---
 layout: note
 date: 2016-01-31
-reader-title: 高上下文和低上下文
-summary: 
+reader-title: 高上下文和低上下文的文化
+summary: 《异类》中有个小故事提到某航空公司内曾因为观念和行为倾向阻碍了紧急迫降时机组成员之间的沟通，酿成飞机失事的惨剧。为解释这种倾向，书中使用了一对有趣的概念——高上下文（Low-Context）的文化与低上下文（High-Context）的文化
 category: translation
 title: high-and-low-context-culture
 ---
