@@ -39,6 +39,116 @@
       </item>
     
       <item>
+        <title>高上下文和低上下文</title>
+        <description>&lt;p&gt;在不同的企业中与不同的人一起工作，有时候能明显感受到两种不同的观念和行为倾向。&lt;/p&gt;
+
+&lt;p&gt;关于这种两种倾向，我记得有一本名为《&lt;a href=&quot;http://book.douban.com/subject/3688489/&quot;&gt;异类（英文：Outlier）&lt;/a&gt;》的书曾经做过精彩的解读，其中有个小故事提到某航空公司内曾因为观念和行为倾向阻碍了紧急迫降时机组成员之间的沟通，酿成飞机失事的惨剧。为解释这种倾向，书中使用了一对有趣的概念——高上下文（Low-Context）的文化与低上下文（High-Context）的文化。&lt;/p&gt;
+
+&lt;p&gt;借助谷歌搜索不难找到介绍这对概念的网站，其中 &lt;a href=&quot;http://www.giselaschmalz.com/?p=2974&quot;&gt;有个网站&lt;/a&gt; 还用表格的形式给出了介绍：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.giselaschmalz.com/wp-content/uploads/2015/03/high-context-culture-tab-c-o-meixinbusiness.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;现在我把这个表格翻译为中文，以便分享给中文读者：&lt;/p&gt;
+
+&lt;table&gt;&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th style=&quot;text-align: center&quot;&gt;低上下文(Low-Context)&lt;/th&gt;
+&lt;th style=&quot;text-align: center&quot;&gt;高上下文(High-Context)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;典型国家举例&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;美国，英国，加拿大，德国，丹麦，挪威&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;日本，中国，埃及，沙特阿拉伯，法国，意大利，西班牙&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;商业前景&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;竞争性的&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;合作性的&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;工作规范&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;以任务为导向&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;以人际关系为导向&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;工作风格&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;个人主义的&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;以团队为导向&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;雇员的渴求&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;个人成就&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;团队成就&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;人际关系&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;很多，较松散的，短期的&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;较少，较紧密的，长期的&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;决策过程&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;逻辑的，线性的，以规则为导向的&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;直觉的，关系的&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;沟通&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;语言表达超过非语言表达&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;非语言表达超过语言表达&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;计划展望&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;更加外显，更加书面化，更加正式&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;更加内隐，更加口头化，更加非正式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;对时间的感知&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;以现在或未来为导向&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;对过去怀有深厚的敬意&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;对变化的观念&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;变化比传统更重要&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;传统比变化更重要&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;知识&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;外显的，有意识的&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;内隐的，不是完全有意识的&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;学习&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;知识是可转移的（在水面线之上）&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;知识是情境化的（在水面线以下）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;表格最后一行 &lt;strong&gt;学习&lt;/strong&gt; 所对应的特点描述中所谓的 &lt;strong&gt;水面线&lt;/strong&gt; 概念，可以用一张图形象地说明：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.teamkn.com/i/DDufDwtD.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;图片来源：&lt;a href=&quot;https://www.pmi.org/%7E/media/PDF/learning/project-complexity/Culture-Induced-Complexity-final.ashx&quot;&gt;Culture-Induced COMPLEXITY: What Every Project and Program Manager Needs to Know&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;其描述文字翻译为中文就是：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;可见的：吃饭的习惯，穿着，传统，语言，建筑&lt;/li&gt;
+&lt;li&gt;不可见的：社会规则，动机，价值观，道德观，信仰，态度&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;冰山是一种通用的隐喻，可用来表达文化与文化互动的复杂性。&lt;/p&gt;
+
+&lt;p&gt;图 1 给出了展示：在水面线上方，你能够找到一些可以观察的属性，比如吃饭的习惯，穿着，建筑，语言等等。尽管如此，文化中还存在着诸如价值观，态度和信仰这样的方面，我们并不容易观察到它们，因此说它们处于水面线以下。对于项目经理和规划经理，尤其是那些身处大型的，国际化业务规划中的经理而言，该如何理解那些位于水面线之下的文化方面？并且最为要紧的是如何查明它们的存在？这些问题的解决有助于驱除额外的复杂性因素。&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Sun, 31 Jan 2016 00:00:00 +0000</pubDate>
+        <link>/base/notes/high-and-low-context-culture.html</link>
+        <guid isPermaLink="true">/base/notes/high-and-low-context-culture.html</guid>
+      </item>
+    
+      <item>
         <title>只做一件事：第五十二篇 - 爱</title>
         <description>&lt;p&gt;爱意味着要有勇气，英文中勇气的词根来自单词“Heart（心）”。我曾在登山旅途中遇到过很多相当危险的情况，但相比之下，在我对第一位令我怦然心动的女友说爱她的前一刻，我感到更加害怕。付出爱需要勇气：在有可能得不到回报时去爱需要勇气，意识到总有一天要与所爱的一切分离也需要勇气，为爱毫无保留、全力以赴更需要勇气。有时候我会问自己：我真的足够勇敢，可以去爱吗？&lt;/p&gt;
 
