@@ -21,11 +21,15 @@
     <div class="spacer"></div>
     <div class="pipe-pane">&nbsp;</div>
     <div class="proc-pane">
+    <!--
       <button onclick="loadProcessor(duplicate);">仅复制</button>&nbsp;
       <button onclick="loadProcessor(x2);">数乘x2</button>&nbsp;
-      <button onclick="loadProcessor(dotGraphGen);">偏序>DOT</button>&nbsp;
-      <button onclick="loadProcessor(partialOrderGen);">DOT>偏序</button>&nbsp;
+    -->
+      <button onclick="loadProcessor(poset2dot);">偏序&gt;DOT</button>&nbsp;
+      <button onclick="loadProcessor(dot2poset);">DOT&gt;偏序</button>&nbsp;
       <button onclick="loadProcessor(dotCodeTidy);">DOT-Tidy</button>&nbsp;
+      <button onclick="loadProcessor(dotCodeLayer1Unwrap);">DOT-去外壳</button>&nbsp;
+      <button onclick="loadProcessor(dotCodeParseGlobalConfig);">DOT-解析全局设置</button>&nbsp;
     </div>
   </div>
   <script type="text/javascript" src="main.js"></script>
