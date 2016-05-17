@@ -584,11 +584,13 @@
   &amp;lt;!&amp;ndash; MP4 must be first for iPad! &amp;ndash;&amp;gt;
   &lt;source src=&quot;http://pimfans.oss-cn-beijing.aliyuncs.com/workflowy-intro/01-%E6%B3%A8%E5%86%8C%E4%B8%80%E4%B8%AA%E6%96%B0%E8%B4%A6%E6%88%B7.mp4&quot; type=&quot;video/mp4&quot; /&gt;
   &amp;lt;!&amp;ndash; WebKit video &amp;ndash;&amp;gt;
-&lt;/video&gt;
-&amp;lt;!&amp;ndash; you &lt;em&gt;must&lt;/em&gt; offer a download link as they may be able to play the file locally. customise this bit all you want &amp;ndash;&amp;gt;
+&lt;/video&gt;&lt;/p&gt;
+
+&lt;!-- you *must* offer a download link as they may be able to play the file locally. customise this bit all you want --&gt;
+
 &lt;p class=&quot;centered&quot;&gt;&lt;strong&gt;下载这个视频：&lt;/strong&gt;
   &lt;a href=&quot;http://pimfans.oss-cn-beijing.aliyuncs.com/workflowy-intro/01-%E6%B3%A8%E5%86%8C%E4%B8%80%E4%B8%AA%E6%96%B0%E8%B4%A6%E6%88%B7.mp4&quot;&gt;01-注册一个新账户.mp4&lt;/a&gt;
-&lt;/p&gt;&lt;/p&gt;
+&lt;/p&gt;
 
 &lt;h3 id=&quot;第二步：完成新手任务，熟悉-workflowy-的基本操作&quot;&gt;第二步：完成新手任务，熟悉 Workflowy 的基本操作&lt;/h3&gt;
 
