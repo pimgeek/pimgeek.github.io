@@ -617,12 +617,18 @@ a:hover {
 body {
   font-family: "Merriweather", "PT Serif", Georgia, "Times New Roman", serif; }
 
-html, body {
+html,
+body {
   height: 100%; }
 
 img {
   width: auto;
   max-width: 100%; }
+
+.centered {
+  display: block;
+  text-align: center;
+  margin: 0 auto; }
 
 .spacer {
   clear: both; }
@@ -651,7 +657,8 @@ img {
   content: "";
   display: block; }
 
-.footer, .site-wrap:after {
+.footer,
+.site-wrap:after {
   height: 120px; }
 
 body {
@@ -762,7 +769,8 @@ table {
   font-weight: 300;
   text-align: center; }
 
-.pagination a, .pagination .disabled {
+.pagination a,
+.pagination .disabled {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -775,7 +783,8 @@ table {
 .pagination .disabled {
   opacity: 0.5; }
 
-.pagination a:hover, .pagination a:focus {
+.pagination a:hover,
+.pagination a:focus {
   background: white;
   color: #477dca; }
 
@@ -826,7 +835,8 @@ abbr {
   border-bottom: 1px black dotted;
   cursor: help; }
 
-pre, code {
+pre,
+code {
   font-family: Menlo, Monaco, "Courier New", monospace; }
 
 code {
@@ -974,7 +984,8 @@ h6,
     margin-top: 0.666em;
     margin-bottom: 1.333em; }
 
-  .social-icons .left, .social-icons .right {
+  .social-icons .left,
+  .social-icons .right {
     text-align: center;
     float: none; } }
 @media screen and (min-width: 64em) {
