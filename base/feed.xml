@@ -7,6 +7,54 @@
     <atom:link href="/base/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>为记录“思路”而定义的数据结构</title>
+        <description>&lt;p&gt;不同人思考问题时产生的“思路”，在结构上有某些共同特点。&lt;/p&gt;
+
+&lt;p&gt;思路通常是由某件事引发，并且力求达到某个特定目标，达成那个目标之后，可能又会进一步引发新思路，产生新的目标。&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;例如：中午 12:30 左右我感觉饿，就开始考虑吃什么；想好了要吃面，又会开始考虑去哪家饭馆，依此类推。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;为了存储这种思路，我提出一种 JSON 数据结构：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;{
+  &amp;quot;inPort&amp;quot;: &amp;quot;前置启发点&amp;quot;,
+  &amp;quot;outPort&amp;quot;: &amp;quot;后继启发点&amp;quot;,
+  &amp;quot;desc&amp;quot;: {
+    &amp;quot;title&amp;quot;: &amp;quot;描述标题&amp;quot;, 
+    &amp;quot;content&amp;quot;: &amp;quot;描述文字&amp;quot; 
+  },
+  &amp;quot;infoUrl&amp;quot;: {
+    &amp;quot;title&amp;quot;: &amp;quot;链接标题&amp;quot;, 
+    &amp;quot;href&amp;quot;: &amp;quot;实际 URL&amp;quot; 
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;inPort 和 outPort 就是引发思考的事或目标&lt;/li&gt;
+&lt;li&gt;desc 用来说明从 inPort 到 outPort 之间，自己思考的来龙去脉大概如何&lt;/li&gt;
+&lt;li&gt;infoUrl 用来给出参考资料的网址&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;下面给出一个数据实例：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;{
+  &amp;quot;inPort&amp;quot;: &amp;quot;急需实现数据可视化机制&amp;quot;,
+  &amp;quot;outPort&amp;quot;: &amp;quot;尝试用d3js实现数据可视化&amp;quot;,
+  &amp;quot;desc&amp;quot;: {
+    &amp;quot;title&amp;quot;: &amp;quot;思路简介&amp;quot;, 
+    &amp;quot;content&amp;quot;: &amp;quot;一直在用 graphviz，后来宋亮推荐用d3js实现，所以就学习了 d3js&amp;quot; 
+  },
+  &amp;quot;infoUrl&amp;quot;: {
+    &amp;quot;title&amp;quot;: &amp;quot;参考链接&amp;quot;, 
+    &amp;quot;href&amp;quot;: &amp;quot;https://d3js.org&amp;quot; 
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;有了能够存储“思路”的 JSON 数据结构，就可以做进一步的编程开发工作了。&lt;/p&gt;
+</description>
+        <pubDate>Thu, 26 May 2016 00:00:00 +0000</pubDate>
+        <link>/base/notes/a-data-structure-storing-thoughts.html</link>
+        <guid isPermaLink="true">/base/notes/a-data-structure-storing-thoughts.html</guid>
+      </item>
+    
+      <item>
         <title>使用 asciinema 制作命令行回放</title>
         <description>&lt;p&gt;实例，展示 ls 的用法。&lt;/p&gt;
 
@@ -311,13 +359,16 @@
 &lt;!-- warning: playback does not work on iPad/iPhone if you include the poster attribute! fixed in iOS4.0                 --&gt;
 
 &lt;p&gt;&lt;video width=&quot;640&quot; height=&quot;360&quot; controls preload=&quot;none&quot;&gt;
-    &amp;lt;!&amp;ndash; MP4 must be first for iPad! &amp;ndash;&amp;gt;
-    &lt;source src=&quot;http://i.teamkn.com/i/V9I6mtNE.mp4&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;!&amp;ndash; WebKit video    &amp;ndash;&amp;gt;
-&lt;/video&gt;
-&amp;lt;!&amp;ndash; you &lt;em&gt;must&lt;/em&gt; offer a download link as they may be able to play the file locally. customise this bit all you want &amp;ndash;&amp;gt;
+&amp;lt;!&amp;ndash; MP4 must be first for iPad! &amp;ndash;&amp;gt;
+    &lt;source src=&quot;http://i.teamkn.com/i/V9I6mtNE.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&amp;lt;!&amp;ndash; WebKit video    &amp;ndash;&amp;gt;
+&lt;/video&gt;&lt;/p&gt;
+
+&lt;!-- you *must* offer a download link as they may be able to play the file locally. customise this bit all you want --&gt;
+
 &lt;p&gt; &lt;strong&gt;下载这个视频：&lt;/strong&gt;
     &lt;a href=&quot;http://i.teamkn.com/i/V9I6mtNE.mp4&quot;&gt;操作演示视频&lt;/a&gt;
-&lt;/p&gt;&lt;/p&gt;
+&lt;/p&gt;
 
 &lt;h3 id=&quot;手指一圈就创建一个点&quot;&gt;手指一圈就创建一个点&lt;/h3&gt;
 

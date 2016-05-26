@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>quick-intro-to-instaviz &#8211; 思圆笔记</title>
+    <title>a-data-structure-storing-thoughts &#8211; 思圆笔记</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="手指一圈就创建一个点，手指一划就创建一条边，还会自动调整节点的位置和排布……">
+    <meta name="description" content="思路通常是由某件事引发，并且力求达到某个特定目标，达成那个目标之后，可能又会进一步引发新思路，产生新的目标。… 有了存储“思路”的 JSON 数据结构，就可以做进一步的编程开发工作了。">
     <meta name="author" content="pimgeek">
     
-    <link rel="canonical" href="/base/notes/quick-intro-to-instaviz.html">
+    <link rel="canonical" href="/base/notes/a-data-structure-storing-thoughts.html">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/base/css/pixyll.css" type="text/css">
@@ -24,9 +24,9 @@
     <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="quick-intro-to-instaviz">
+    <meta property="og:title" content="a-data-structure-storing-thoughts">
     <meta property="og:description" content="让思考转起来">
-    <meta property="og:url" content="/notes/quick-intro-to-instaviz.html">
+    <meta property="og:url" content="/notes/a-data-structure-storing-thoughts.html">
     <meta property="og:site_name" content="思圆笔记">
 
     <!-- Icons -->
@@ -107,47 +107,53 @@
 
 
 <div class="post-header mb2">
-  <h1>instaviz 绘图工具简介</h1>
-  <span class="post-meta">2016 年 01 月 27 日</span><br>
+  <h1>为记录“思路”而定义的数据结构</h1>
+  <span class="post-meta">2016 年 05 月 26 日</span><br>
   
-  <!-- <span class="post-meta small">阅读时间估计：1 分钟</span> -->
+  <!-- <span class="post-meta small">阅读时间估计：5 分钟</span> -->
 </div>
 
 <article class="post-content">
-  <p>推荐一个新的思维示意图编辑器，可以在 iPhone 和 iPad 上使用，用起来很酷很拉风的！</p>
+  <p>不同人思考问题时产生的“思路”，在结构上有某些共同特点。</p>
 
-<!-- "Video For Everybody" v0.4.1 by Kroc Camen of Camen Design <camendesign.com/code/video_for_everybody>
-     =================================================================================================================== &ndash;>
+<p>思路通常是由某件事引发，并且力求达到某个特定目标，达成那个目标之后，可能又会进一步引发新思路，产生新的目标。</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">例如：中午 12:30 左右我感觉饿，就开始考虑吃什么；想好了要吃面，又会开始考虑去哪家饭馆，依此类推。
+</code></pre></div>
+<p>为了存储这种思路，我提出一种 JSON 数据结构：</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">{
+  &quot;inPort&quot;: &quot;前置启发点&quot;,
+  &quot;outPort&quot;: &quot;后继启发点&quot;,
+  &quot;desc&quot;: {
+    &quot;title&quot;: &quot;描述标题&quot;, 
+    &quot;content&quot;: &quot;描述文字&quot; 
+  },
+  &quot;infoUrl&quot;: {
+    &quot;title&quot;: &quot;链接标题&quot;, 
+    &quot;href&quot;: &quot;实际 URL&quot; 
+  }
+}
+</code></pre></div>
+<ul>
+<li>inPort 和 outPort 就是引发思考的事或目标</li>
+<li>desc 用来说明从 inPort 到 outPort 之间，自己思考的来龙去脉大概如何</li>
+<li>infoUrl 用来给出参考资料的网址</li>
+</ul>
 
-<!-- first try HTML5 playback: if serving as XML, expand `controls` to `controls="controls"` and autoplay likewise       -->
-
-<!-- warning: playback does not work on iPad/iPhone if you include the poster attribute! fixed in iOS4.0                 -->
-
-<p><video width="640" height="360" controls preload="none">
-&lt;!&ndash; MP4 must be first for iPad! &ndash;&gt;
-    <source src="http://i.teamkn.com/i/V9I6mtNE.mp4" type="video/mp4" />
-&lt;!&ndash; WebKit video    &ndash;&gt;
-</video></p>
-
-<!-- you *must* offer a download link as they may be able to play the file locally. customise this bit all you want -->
-
-<p> <strong>下载这个视频：</strong>
-    <a href="http://i.teamkn.com/i/V9I6mtNE.mp4">操作演示视频</a>
-</p>
-
-<h3 id="手指一圈就创建一个点">手指一圈就创建一个点</h3>
-
-<p><img src="http://i.teamkn.com/i/KCgl4xSk.png?imageMogr2/thumbnail/640x" alt=""></p>
-
-<h3 id="手指一划就创建一条边">手指一划就创建一条边</h3>
-
-<p><img src="http://i.teamkn.com/i/zwwrY9cO.png?imageMogr2/thumbnail/640x" alt=""></p>
-
-<h3 id="应用会自动调整节点的位置和排布，保持图片整齐">应用会自动调整节点的位置和排布，保持图片整齐</h3>
-
-<p><img src="http://i.teamkn.com/i/CRTVyHvz.png?imageMogr2/thumbnail/640x" alt=""></p>
-
-<p>这个工具叫做 <a href="https://itunes.apple.com/app/id1035029848?mt=8">instaviz</a>，目前只支持 iOS 设备。</p>
+<p>下面给出一个数据实例：</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">{
+  &quot;inPort&quot;: &quot;急需实现数据可视化机制&quot;,
+  &quot;outPort&quot;: &quot;尝试用d3js实现数据可视化&quot;,
+  &quot;desc&quot;: {
+    &quot;title&quot;: &quot;思路简介&quot;, 
+    &quot;content&quot;: &quot;一直在用 graphviz，后来宋亮推荐用d3js实现，所以就学习了 d3js&quot; 
+  },
+  &quot;infoUrl&quot;: {
+    &quot;title&quot;: &quot;参考链接&quot;, 
+    &quot;href&quot;: &quot;https://d3js.org&quot; 
+  }
+}
+</code></pre></div>
+<p>有了能够存储“思路”的 JSON 数据结构，就可以做进一步的编程开发工作了。</p>
 
 </article>
 
@@ -161,9 +167,9 @@
   <div id="disqus_thread"></div>
   <script type="text/javascript">
     var disqus_shortname  = 'pimgeek';
-    var disqus_identifier = 'quick-intro-to-instaviz';
-    var disqus_title = 'instaviz 绘图工具简介';
-    var disqus_url = 'http://' + document.domain + '/base/notes/quick-intro-to-instaviz.html';
+    var disqus_identifier = 'a-data-structure-storing-thoughts';
+    var disqus_title = '为记录“思路”而定义的数据结构';
+    var disqus_url = 'http://' + document.domain + '/base/notes/a-data-structure-storing-thoughts.html';
 
     var disqus_config = function () {
       this.page.identifier = disqus_identifier;
