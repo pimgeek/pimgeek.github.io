@@ -1,0 +1,151 @@
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+label {
+  font-size: 14px;
+  min-height: 24px;
+  display: block;
+  margin: 0 auto;
+}
+
+img {
+  width: 98%;
+}
+
+.spacer {
+  height: 6px;
+  width: 100px;
+  clear: both;
+}
+
+.outer_frame {
+  position: relative;
+  padding: 2px;
+  background-color: #ffcc66;
+  border: 0px solid red;
+  border-radius: 7px;
+  margin: 0 auto;
+}
+
+.outer_title_box {
+  width: 70%;
+  height: 24px;
+  float: left;
+  border-radius: 6px;
+  text-align: center;
+  padding: 6px 0 0 0;
+  margin: 3px 3px 0 3px;
+  background-color: #cc6611;
+}
+
+label.outer_title {}
+
+.inner_frame {
+  padding: 5px;
+  background-color: #ffdd99;
+  border: 0px solid blue;
+  border-radius: 7px;
+  margin: 0 3px 3px 3px;
+}
+
+.inner_frame a {
+  color: #111111;
+}
+
+.inner_frame a:hover {
+  color: black;
+  font-weight: bold;
+}
+
+.inner_frame a:visited {
+  color: dimgray;
+}
+
+.node_body a {
+  color: #1111ff;
+}
+
+.node_body a:hover {
+  font-weight: bold;
+}
+
+.node_body a:visited {
+  color: dimgray;
+}
+
+.inner_title_box {
+  width: 80%;
+  height: 24px;
+  float: left;
+  border-radius: 6px;
+  text-align: center;
+  padding: 6px 0 0 0;
+  background-color: #ff9933;
+}
+
+label.inner_title {
+  color: black;
+  font-weight: bold;
+}
+
+.prev_title_box {
+  width: 85%;
+  height: 24px;
+  float: left;
+  border-radius: 6px;
+  text-align: center;
+  padding: 6px 0 0 0;
+  background-color: #ffffcc;
+}
+
+label.prev_title {}
+
+.next_title_box {
+  width: 85%;
+  height: 24px;
+  float: right;
+  border-radius: 6px;
+  text-align: center;
+  padding: 6px 0 0 0;
+  background-color: #ffffcc;
+}
+
+label.next_title {}
+
+.node_body {
+  background-color: #ffeeaa;
+  border: 0px solid blue;
+  border-radius: 7px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+label.node_title {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 5px 0 5px 0;
+}
+
+.node_last_chg_dt {
+  font-size: 12px;
+  padding: 5px 0 5px 0;
+}
+
+.sub_nodes_title {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 0 0 0;
+}
+
+.ds-thread {
+  padding: 5px;
+  background-color: white;
+  border-radius: 6px;
+  margin: 0 0 54% 0;
+}
