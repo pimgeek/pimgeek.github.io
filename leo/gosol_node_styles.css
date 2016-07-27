@@ -14,8 +14,8 @@ label {
   margin: 0 auto;
 }
 
-img {
-  width: 98%;
+img, video {
+  width: 99%;
 }
 
 .spacer {
