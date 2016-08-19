@@ -1,3 +1,5 @@
+/*@+leo-ver=5-thin*/
+/*@+node:pimgeek.20160723072634.1: * @file gosol_node_styles.css*/
 a {
   text-decoration: none;
   color: #ffffff;
@@ -14,8 +16,20 @@ label {
   margin: 0 auto;
 }
 
-img, video {
-  width: 99%;
+img {
+  width: 98%;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.05);
+  margin-top: 15px;
+}
+
+blockquote {
+  background-color: lightgoldenrodyellow;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 85%;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 .spacer {
@@ -126,6 +140,80 @@ label.next_title {}
   margin: 0 auto;
 }
 
+#context_help_box {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  border: 5px solid lightblue;
+  border-radius: 10px;
+  background-color: #ffffdd;
+  margin: 0 auto;
+  z-index: -99;
+  text-align: left;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+#context_help_btn {
+  width: 25px;
+  height: 25px;
+  float: right;
+  background-color: #5577ee;
+  border: 5px solid lightblue;
+  border-radius: 20px;
+  font-weight: bolder;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  line-height: 120%;
+}
+
+#context_graph_box {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  border: 5px solid lightgreen;
+  border-radius: 10px;
+  background-color: #ffffdd;
+  margin: 0 auto;
+  z-index: -99;
+  overflow: scroll;
+  text-align: left;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+#context_graph_btn {
+  width: 25px;
+  height: 25px;
+  float: right;
+  background-color: #55ee77;
+  border: 5px solid lightgreen;
+  border-radius: 20px;
+  font-weight: bolder;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  line-height: 120%;
+}
+
+#context_graph_close_btn {
+  width: 20px;
+  height: 20px;
+  float: right;
+  background-color: dimgray;
+  border: 5px solid lightgray;
+  border-radius: 18px;
+  font-weight: bolder;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  line-height: 100%;
+}
+
 label.node_title {
   font-size: 24px;
   font-weight: bold;
@@ -149,3 +237,4 @@ label.node_title {
   border-radius: 6px;
   margin: 0 0 54% 0;
 }
+/*@-leo*/
