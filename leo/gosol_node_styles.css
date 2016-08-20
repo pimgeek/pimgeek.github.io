@@ -9,6 +9,10 @@ a:hover {
   font-weight: bold;
 }
 
+p {
+  line-height: 168%;
+}
+
 label {
   font-size: 14px;
   min-height: 24px;
