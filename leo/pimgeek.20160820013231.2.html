@@ -1,11 +1,14 @@
 
 <html>
-  <head>
-    <title>专注是一切个人提升的前提</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="gosol_node_styles.css"/>
-  </head>
+  
+    <head>
+      <title>专注是一切个人提升的前提</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <link rel="stylesheet" type="text/css" href="gosol_node_styles.css" />
+      <link rel="stylesheet" type="text/css" href="dagre.css" />
+    </head>
+    
   <body>
     
       <div class="outer_frame">
@@ -29,7 +32,7 @@
               <label class="prev_title">❮ 上一步：相见恨晚的知识分享</label>
             </div>
           </a>
-          <div id="context_graph_btn" onclick="switchDisplay('context_graph_box');">G</div>
+          <div id="context_graph_btn" onclick="switchDisplay('context_graph_box');tryDraw();">G</div>
           <!-- <div id="context_help_btn" onclick="switchDisplay('context_help_box');">?</div> -->
           <div class="spacer"></div>
           <div class="node_body">
@@ -59,7 +62,11 @@
             <div id="context_graph_close_btn" onclick="undoDisplay('context_graph_box')">×</div>
             <div>
               <div id="debugInfo"></div>
-              <div id="output"></div>
+              <div id="output">
+                <svg width=800 height=600>
+                  <g/>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
@@ -68,21 +75,22 @@
 
 digraph G {
   rankdir=TB
-  graph [fontname="simhei" splines="true" nodesep="0.2" ranksep="0.2" bgcolor="transparent"]
-  edge  [fontname="simhei" fontsize="9" arrowsize="0.6"]
-  node  [fontname="simhei" fontsize="10" shape="note" height="0.1" style="filled" fillcolor="#ffffcc"]
-  "相见恨晚的知识分享" -> "相见恨晚的知识分享 Get√" [style="dashed" label="期望达到
-的目标…"]
-  "相见恨晚的知识分享" [shape="cds" fillcolor="#ee7755" fontcolor="white" href="pimgeek.20160820013231.1.html"]
+  graph [fontname="simhei" bgcolor="transparent"]
+  edge  [labelStyle="font: 500 14px simhei" arrowhead="vee"]
+  node  [rx=5 ry=5 labelStyle="font: 600 14px simhei;" style="fill: #ffffcc"]
+  "相见恨晚的知识分享" -> "相见恨晚的知识分享 Get√" [style="stroke-dasharray: 5,2;" labelType="html" label="期望达到<br />的目标…"]
+  "相见恨晚的知识分享" [shape="ellipse" style="fill: #ee7755" labelType="html" label="<a href='pimgeek.20160820013231.1.html'>相见恨晚的知识分享</a>"]
+  "专题知识分享" -> "相见恨晚的知识分享"
+  "专题知识分享" [labelType="html" label="<a href='pimgeek.20160622103730.2.html'>专题知识分享</a>"]
   "相见恨晚的知识分享 Get√" -> "专题知识分享 Get√"
-  "专题知识分享 Get√" [href="pimgeek.20160719225535.1.html"]
+  "专题知识分享 Get√" [labelType="html" label="<a href='pimgeek.20160719225535.1.html'>专题知识分享 Get√</a>"]
   "相见恨晚的知识分享" -> "专注是一切个人提升的前提"
-  "专注是一切个人提升的前提" [href="pimgeek.20160820013231.2.html"]
+  "专注是一切个人提升的前提" [labelType="html" label="<a href='pimgeek.20160820013231.2.html'>专注是一切个人提升的前提</a>"]
   "专注是一切个人提升的前提" -> "学会回归专注"
   "学会回归专注" -> "相见恨晚的知识分享 Get√"
-  "学会回归专注" [shape="folder" href="pimgeek.20160820023626.1.html"]
-  "相见恨晚的知识分享 Get√" [shape="cds" fillcolor="#55ee77" href="pimgeek.20160820013231.3.html"]
-  "专注是一切个人提升的前提" [penwidth="2" color="#5577ee"]
+  "学会回归专注" [shape="circle" labelType="html" label="<a href='pimgeek.20160820023626.1.html'>学会回归专注</a>"]
+  "相见恨晚的知识分享 Get√" [shape="ellipse" style="fill: #55ee77;" labelType="html" label="<a href='pimgeek.20160820013231.3.html'>相见恨晚的知识分享 Get√</a>"]
+  "专注是一切个人提升的前提" [style="stroke: #5577ee; stroke-width: 4"]
 }
   
       </script>
@@ -118,9 +126,13 @@ digraph G {
     </script>
     <!-- 微信浏览器中输入框防遮挡 end -->
   
-    <script type="text/javascript" src="gosol_node_actions.js"></script>
-    <script type="text/javascript" src="viz.js"></script>
-    <script type="text/javascript">updateGraph();</script>
+    
+      <script type="text/javascript" src="d3.min.js"></script>
+      <script type="text/javascript" src="graphlib-dot.js"></script>
+      <script type="text/javascript" src="dagre-d3.min.js"></script>
+      <script type="text/javascript" src="dagre_utils.js"></script>
+      <script type="text/javascript" src="gosol_node_actions.js"></script>
+    
   </body>
 </html>
   

@@ -1,11 +1,14 @@
 
 <html>
-  <head>
-    <title>文件搜索工具介绍</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="gosol_node_styles.css"/>
-  </head>
+  
+    <head>
+      <title>文件搜索工具介绍</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <link rel="stylesheet" type="text/css" href="gosol_node_styles.css" />
+      <link rel="stylesheet" type="text/css" href="dagre.css" />
+    </head>
+    
   <body>
     
       <div class="outer_frame">
@@ -29,7 +32,7 @@
               <label class="prev_title">❮ 上一步：各种信息搜索工具介绍</label>
             </div>
           </a>
-          <div id="context_graph_btn" onclick="switchDisplay('context_graph_box');">G</div>
+          <div id="context_graph_btn" onclick="switchDisplay('context_graph_box');tryDraw();">G</div>
           <!-- <div id="context_help_btn" onclick="switchDisplay('context_help_box');">?</div> -->
           <div class="spacer"></div>
           <div class="node_body">
@@ -57,7 +60,11 @@
             <div id="context_graph_close_btn" onclick="undoDisplay('context_graph_box')">×</div>
             <div>
               <div id="debugInfo"></div>
-              <div id="output"></div>
+              <div id="output">
+                <svg width=800 height=600>
+                  <g/>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
@@ -66,21 +73,22 @@
 
 digraph G {
   rankdir=TB
-  graph [fontname="simhei" splines="true" nodesep="0.2" ranksep="0.2" bgcolor="transparent"]
-  edge  [fontname="simhei" fontsize="9" arrowsize="0.6"]
-  node  [fontname="simhei" fontsize="10" shape="note" height="0.1" style="filled" fillcolor="#ffffcc"]
-  "文件搜索工具介绍" -> "文件搜索工具介绍 Get√" [style="dashed" label="期望达到
-的目标…"]
-  "文件搜索工具介绍" [shape="cds" fillcolor="#ee7755" fontcolor="white" href="pimgeek.20160822132536.1.html"]
+  graph [fontname="simhei" bgcolor="transparent"]
+  edge  [labelStyle="font: 500 14px simhei" arrowhead="vee"]
+  node  [rx=5 ry=5 labelStyle="font: 600 14px simhei;" style="fill: #ffffcc"]
+  "文件搜索工具介绍" -> "文件搜索工具介绍 Get√" [style="stroke-dasharray: 5,2;" labelType="html" label="期望达到<br />的目标…"]
+  "文件搜索工具介绍" [shape="ellipse" style="fill: #ee7755" labelType="html" label="<a href='pimgeek.20160822132536.1.html'>文件搜索工具介绍</a>"]
+  "各种信息搜索工具介绍" -> "文件搜索工具介绍"
+  "各种信息搜索工具介绍" [labelType="html" label="<a href='pimgeek.20160822132437.1.html'>各种信息搜索工具介绍</a>"]
   "文件搜索工具介绍 Get√" -> "各种信息搜索工具介绍 Get√"
-  "各种信息搜索工具介绍 Get√" [href="pimgeek.20160822132612.1.html"]
+  "各种信息搜索工具介绍 Get√" [labelType="html" label="<a href='pimgeek.20160822132612.1.html'>各种信息搜索工具介绍 Get√</a>"]
   "文件搜索工具介绍" -> "everything"
-  "everything" [href="pimgeek.20160822132449.1.html"]
+  "everything" [labelType="html" label="<a href='pimgeek.20160822132449.1.html'>everything</a>"]
   "everything" -> "listary"
-  "listary" [href="pimgeek.20160822132517.1.html"]
+  "listary" [labelType="html" label="<a href='pimgeek.20160822132517.1.html'>listary</a>"]
   "listary" -> "文件搜索工具介绍 Get√"
-  "文件搜索工具介绍 Get√" [shape="cds" fillcolor="#55ee77" href="pimgeek.20160822132647.1.html"]
-  "文件搜索工具介绍" [penwidth="2" color="#5577ee"]
+  "文件搜索工具介绍 Get√" [shape="ellipse" style="fill: #55ee77;" labelType="html" label="<a href='pimgeek.20160822132647.1.html'>文件搜索工具介绍 Get√</a>"]
+  "文件搜索工具介绍" [style="stroke: #5577ee; stroke-width: 4"]
 }
   
       </script>
@@ -116,9 +124,13 @@ digraph G {
     </script>
     <!-- 微信浏览器中输入框防遮挡 end -->
   
-    <script type="text/javascript" src="gosol_node_actions.js"></script>
-    <script type="text/javascript" src="viz.js"></script>
-    <script type="text/javascript">updateGraph();</script>
+    
+      <script type="text/javascript" src="d3.min.js"></script>
+      <script type="text/javascript" src="graphlib-dot.js"></script>
+      <script type="text/javascript" src="dagre-d3.min.js"></script>
+      <script type="text/javascript" src="dagre_utils.js"></script>
+      <script type="text/javascript" src="gosol_node_actions.js"></script>
+    
   </body>
 </html>
   

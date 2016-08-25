@@ -144,6 +144,10 @@ label.next_title {}
   margin: 0 auto;
 }
 
+#output {
+  text-align: center;
+}
+
 #context_help_box {
   position: absolute;
   top: 10%;
@@ -187,7 +191,7 @@ label.next_title {}
   overflow: scroll;
   text-align: left;
   opacity: 0;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 
 #context_graph_btn {
