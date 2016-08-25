@@ -9,24 +9,28 @@
   <body>
     
       <div class="outer_frame">
-        <a href="pimgeek.20160622152326.1.html">
-          <div class="outer_title_box">
-            <label class="outer_title">⏫ 浅层关注：收集新想法</label>
-          </div>
-        </a>
-        <div class="spacer"></div>
-        <div class="inner_frame">
-          <a href="pimgeek.20160630110636.1.html">
-            <div class="inner_title_box">
-              <label class="inner_title">⚓ 当前关注：如何选用合适的数据展现图表？</label>
+        <div id="context_help_box">
+          <a href="#">
+            <div class="outer_title_box">
+              <label class="outer_title">⏫ 浅层关注：无</label>
             </div>
           </a>
+          <a href="pimgeek.20160630110636.1.html">
+            <div class="inner_title_box">
+              <label class="inner_title">⚓ 当前关注：选用合适的数据展现图表</label>
+            </div>
+          </a>
+        </div>
+        <div class="spacer"></div>
+        <div class="inner_frame">
           <div class="spacer"></div>
           <a href="pimgeek.20160630110709.1.html">
             <div class="prev_title_box">
               <label class="prev_title">❮ 上一步：Andrew Abela 的图表选择建议</label>
             </div>
           </a>
+          <div id="context_graph_btn" onclick="switchDisplay('context_graph_box');">G</div>
+          <!-- <div id="context_help_btn" onclick="switchDisplay('context_help_box');">?</div> -->
           <div class="spacer"></div>
           <div class="node_body">
             <label class="node_title">AntV 蚂蚁金服的数据可视化规范</label>
@@ -50,12 +54,41 @@
           <div class="spacer"></div>
           <a href="pimgeek.20160630125802.1.html">
             <div class="next_title_box">
-              <label class="next_title">下一步：已熟悉各类图表的适用范围 ❯</label>
+              <label class="next_title">下一步：选用合适的数据展现图表 Get√ ❯</label>
             </div>
           </a>
           <div class="spacer"></div>
+          <div id="context_graph_box">
+            <div id="context_graph_close_btn" onclick="undoDisplay('context_graph_box')">×</div>
+            <div>
+              <div id="debugInfo"></div>
+              <div id="output"></div>
+            </div>
+          </div>
         </div>
       </div>
+      <script id="dot_code" type="text/graphviz">
+
+digraph G {
+  rankdir=TB
+  graph [fontname="simhei" splines="true" nodesep="0.2" ranksep="0.2" bgcolor="transparent"]
+  edge  [fontname="simhei" fontsize="9" arrowsize="0.6"]
+  node  [fontname="simhei" fontsize="10" shape="note" height="0.1" style="filled" fillcolor="#ffffcc"]
+  "选用合适的数据展现图表" -> "选用合适的数据展现图表 Get√" [style="dashed" label="期望达到
+的目标…"]
+  "选用合适的数据展现图表" [shape="cds" fillcolor="#ee7755" fontcolor="white" href="pimgeek.20160630110636.1.html"]
+  "选用合适的数据展现图表 Get√" -> "收集新想法 Get√"
+  "收集新想法 Get√" [href="pimgeek.20160720151852.1.html"]
+  "选用合适的数据展现图表" -> "Andrew Abela 的图表选择建议"
+  "Andrew Abela 的图表选择建议" [href="pimgeek.20160630110709.1.html"]
+  "Andrew Abela 的图表选择建议" -> "AntV 蚂蚁金服的数据可视化规范"
+  "AntV 蚂蚁金服的数据可视化规范" [href="pimgeek.20160630115613.1.html"]
+  "AntV 蚂蚁金服的数据可视化规范" -> "选用合适的数据展现图表 Get√"
+  "选用合适的数据展现图表 Get√" [shape="cds" fillcolor="#55ee77" href="pimgeek.20160630125802.1.html"]
+  "AntV 蚂蚁金服的数据可视化规范" [penwidth="2" color="#5577ee"]
+}
+  
+      </script>
     
     <!-- 正文与评论区的分隔线 -->
     
@@ -88,6 +121,9 @@
     </script>
     <!-- 微信浏览器中输入框防遮挡 end -->
   
+    <script type="text/javascript" src="gosol_node_actions.js"></script>
+    <script type="text/javascript" src="viz.js"></script>
+    <script type="text/javascript">updateGraph();</script>
   </body>
 </html>
   
