@@ -20,11 +20,15 @@ label {
   margin: 0 auto;
 }
 
-img, embed {
+img {
   width: 95%;
   border-radius: 10px;
   border: 1px solid rgba(0,0,0,0.05);
   margin-top: 15px;
+}
+
+embed {
+  width: 95%;
 }
 
 blockquote {
