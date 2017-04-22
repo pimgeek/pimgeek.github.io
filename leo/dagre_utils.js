@@ -33,6 +33,7 @@ function tryDraw() {
   var g;
   inputGraph.setAttribute("class", "");
   try {
+    console.log(decodeHtml(inputGraph.value));
     g = graphlibDot.read(decodeHtml(inputGraph.value));
   } catch (e) {
     inputGraph.setAttribute("class", "error");
