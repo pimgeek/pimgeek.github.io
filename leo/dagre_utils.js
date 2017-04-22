@@ -4,6 +4,12 @@
 
 var inputGraph = document.querySelector("#dot_code");
 
+function decodeHtml(html) {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
+}
+
 // Set up zoom support
 var svg = d3.select("svg"),
   inner = d3.select("svg g");
@@ -21,7 +27,7 @@ function tryDraw() {
   var g;
   inputGraph.setAttribute("class", "");
   try {
-    g = graphlibDot.read(inputGraph.innerHTML);
+    g = graphlibDot.read(decodeHtml(inputGraph.value));
   } catch (e) {
     inputGraph.setAttribute("class", "error");
     throw e;
