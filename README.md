@@ -1,6 +1,3 @@
-pimfans 个人信息管理知识/技能分享站
-=================
+# 学习者 pimgeek 的个人网站 (专注 PKM 个人知识管理)
 
-* 国内访问：http://pimgeek.coding.me
-* 国外访问：http://pimgeek.github.io
-
+* https://pimgeek.com
